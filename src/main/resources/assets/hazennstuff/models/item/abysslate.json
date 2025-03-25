@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "hazennstuff:block/abysslate_bottom",
+    "east": "hazennstuff:block/abysslate_side",
+    "north": "hazennstuff:block/abysslate_side",
+    "particle": "hazennstuff:block/abysslate_side",
+    "south": "hazennstuff:block/abysslate_side",
+    "up": "hazennstuff:block/abysslate_top",
+    "west": "hazennstuff:block/abysslate_side"
+  }
+}

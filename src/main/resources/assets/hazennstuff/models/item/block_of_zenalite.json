@@ -1,0 +1,6 @@
+{
+  "parent": "hazennstuff:block/block_of_zenalite",
+  "textures": {
+    "all": "hazennstuff:block/block_of_zenalite"
+  }
+}

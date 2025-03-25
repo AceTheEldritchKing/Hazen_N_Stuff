@@ -1,5 +1,6 @@
 package net.hazen.hazennstuff;
 
+import net.hazen.hazennstuff.block.ModBlocks;
 import net.hazen.hazennstuff.item.ModItems;
 import org.slf4j.Logger;
 
@@ -88,6 +89,7 @@ public class HazenNStuff
         NeoForge.EVENT_BUS.register(this);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -118,6 +120,18 @@ public class HazenNStuff
             event.accept(ModItems.OMINOUSALLOY);
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS)
             event.accept(ModItems.RAWZENALITE);
+        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS)
+            event.accept(ModItems.STARKISSEDZENALITE);
+        if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS)
+            event.accept (ModBlocks.ZENALITE_ORE);
+        if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS)
+            event.accept (ModBlocks.ZENALITE_BRICKS);
+        if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS)
+            event.accept (ModBlocks.PHANTASMIUM);
+        if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS)
+            event.accept (ModBlocks.BLOCK_OF_ZENALITE);
+        if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS)
+            event.accept (ModBlocks.ABYSSLATE);
 
     }
 

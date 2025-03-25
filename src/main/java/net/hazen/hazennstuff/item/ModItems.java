@@ -17,6 +17,8 @@ public class ModItems {
 
     public static final DeferredItem<Item> RAWZENALITE = ITEMS.register("raw_zenalite",
             () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> STARKISSEDZENALITE = ITEMS.register("starkissed_zenalite",
+            () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
