@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "hazennstuff:block_of_zenalite"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "hazennstuff:blocks/block_of_zenalite"
+}

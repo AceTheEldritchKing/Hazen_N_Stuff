@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "hazennstuff:block_of_zenalite"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "id": "hazennstuff:zenalite"
+  }
+}
