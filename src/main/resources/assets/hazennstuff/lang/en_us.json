@@ -8,5 +8,8 @@
   "block.hazennstuff.phantasmium": "Phantasmium",
   "block.hazennstuff.zenalite_bricks": "Zenalite Bricks",
   "block.hazennstuff.block_of_zenalite": "Block of Zenalite",
-  "block.hazennstuff.abysslate": "Abysslate"
+  "block.hazennstuff.abysslate": "Abysslate",
+
+  "creativetab.hazennstuff.hazennstuff_materials": "Hazen 'n Stuff Materials",
+  "creativetab.hazennstuff.hazennstuff_blocks": "Hazen 'n Stuff Blocks"
 }

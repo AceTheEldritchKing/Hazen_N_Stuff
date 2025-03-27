@@ -2,9 +2,12 @@ package net.hazen.hazennstuff.block;
 
 import net.hazen.hazennstuff.HazenNStuff;
 import net.hazen.hazennstuff.item.ModItems;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.PickaxeItem;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.bus.api.IEventBus;
@@ -18,20 +21,20 @@ public class ModBlocks {
             DeferredRegister.createBlocks(HazenNStuff.MOD_ID);
 
     public static final DeferredBlock<Block> ZENALITE_ORE = registerBlock("zenalite_ore",
-            () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.ANCIENT_DEBRIS)));
+            () -> new DropExperienceBlock(UniformInt.of(2, 4),
+            BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.ANCIENT_DEBRIS)));
     public static final DeferredBlock<Block> PHANTASMIUM = registerBlock("phantasmium",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.ANCIENT_DEBRIS)));
+                    .strength(3f).requiresCorrectToolForDrops().sound(SoundType.ANCIENT_DEBRIS)));
     public static final DeferredBlock<Block> ZENALITE_BRICKS = registerBlock("zenalite_bricks",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE_TILES)));
+                    .strength(3f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE_TILES)));
     public static final DeferredBlock<Block> BLOCK_OF_ZENALITE = registerBlock("block_of_zenalite",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.COPPER_GRATE)));
+                    .strength(3f).requiresCorrectToolForDrops().sound(SoundType.COPPER_GRATE)));
     public static final DeferredBlock<Block> ABYSSLATE = registerBlock("abysslate",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.ANCIENT_DEBRIS)));
+                    .strength(3f).requiresCorrectToolForDrops().sound(SoundType.ANCIENT_DEBRIS)));
 
 
 

@@ -17,8 +17,33 @@ version = mod_version
 group = mod_group_id
 
 repositories {
-    mavenLocal()
+    flatDir {
+        dir 'libs'
+    }
+
+    maven {
+        name = "Iron's Maven - Release"
+        url = "https://code.redspace.io/releases"
+    }
+
+    maven {
+        name = "Iron's Maven - Snapshots"
+        url = "https://code.redspace.io/snapshots"
+    }
+
+    maven { url = "https://maven.enginehub.org/repo/" }
+    maven {
+        url = "https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/"
+        content {
+            includeGroup("software.bernie.geckolib")
+        }
+    }
+    maven { url = "https://maven.theillusivec4.top" }
+    maven { url = "https://cursemaven.com" }
+    maven { url = "https://maven.blamejared.com" }
+    maven { url = "https://maven.kosmx.dev/" }
 }
+
 
 base {
     archivesName = mod_id
@@ -112,27 +137,28 @@ configurations {
 }
 
 dependencies {
-    // Example optional mod dependency with JEI
-    // The JEI API is declared for compile time use, while the full JEI artifact is used at runtime
-    // compileOnly "mezz.jei:jei-${mc_version}-common-api:${jei_version}"
-    // compileOnly "mezz.jei:jei-${mc_version}-neoforge-api:${jei_version}"
-    // We add the full version to localRuntime, not runtimeOnly, so that we do not publish a dependency on it
-    // localRuntime "mezz.jei:jei-${mc_version}-neoforge:${jei_version}"
+    // ISS ***************************************************************************************************
+    implementation "curse.maven:iss-855414:6333294"
 
-    // Example mod dependency using a mod jar from ./libs with a flat dir repository
-    // This maps to ./libs/coolmod-${mc_version}-${coolmod_version}.jar
-    // The group id is ignored when searching -- in this case, it is "blank"
-    // implementation "blank:coolmod-${mc_version}:${coolmod_version}"
+    // GECKOLIB ***************************************************************************************************
+    implementation "curse.maven:geckolib-388172:6304958"
 
-    // Example mod dependency using a file as dependency
-    // implementation files("libs/coolmod-${mc_version}-${coolmod_version}.jar")
+    // PLAYER ANIMATOR ********************************************************************************************
+    implementation "curse.maven:player_animator-658587:6024462"
 
-    // Example project dependency using a sister or child project:
-    // implementation project(":myproject")
+    // CURIOS *****************************************************************************************************
+    //todo: 1.21: find correct maven for new curios
+    implementation "curse.maven:adorned-1036809:5546365"
+    //implementation "curse.maven:curios-continuation-1037991:5546342"
+    //compileOnly "top.theillusivec4.curios:curios-forge:8.0.1+1.20.6:api"
 
-    // For more info:
-    // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
-    // http://www.gradle.org/docs/current/userguide/dependency_management.html
+    // BETTER COMBAT **********************************************************************************************
+    //localRuntime "curse.maven:better-combat-by-daedelus-${better_combat_version}"
+    //localRuntime "curse.maven:cloth-config-348521:4633416"
+
+    // PATCHOULI **************************************************************************************************
+    //compileOnly "vazkii.patchouli:Patchouli:${patchouli_version}:api"
+    //localRuntime "vazkii.patchouli:Patchouli:${patchouli_version}"
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.
