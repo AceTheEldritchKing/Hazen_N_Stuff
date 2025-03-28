@@ -25,16 +25,16 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.ANCIENT_DEBRIS)));
     public static final DeferredBlock<Block> PHANTASMIUM = registerBlock("phantasmium",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(3f).requiresCorrectToolForDrops().sound(SoundType.ANCIENT_DEBRIS)));
+                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.ANCIENT_DEBRIS)));
     public static final DeferredBlock<Block> ZENALITE_BRICKS = registerBlock("zenalite_bricks",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(3f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE_TILES)));
+                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE_TILES)));
     public static final DeferredBlock<Block> BLOCK_OF_ZENALITE = registerBlock("block_of_zenalite",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(3f).requiresCorrectToolForDrops().sound(SoundType.COPPER_GRATE)));
+                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.COPPER_GRATE)));
     public static final DeferredBlock<Block> ABYSSLATE = registerBlock("abysslate",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(3f).requiresCorrectToolForDrops().sound(SoundType.ANCIENT_DEBRIS)));
+                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.ANCIENT_DEBRIS)));
 
 
 

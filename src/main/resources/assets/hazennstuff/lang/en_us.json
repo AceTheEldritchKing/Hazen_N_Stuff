@@ -10,6 +10,12 @@
   "block.hazennstuff.block_of_zenalite": "Block of Zenalite",
   "block.hazennstuff.abysslate": "Abysslate",
 
+  "item.hazennstuff.creaking_mask": "Creaking Mask",
+  "item.hazennstuff.creaking_chestplate": "Creaking Chestplate",
+  "item.hazennstuff.creaking_leggings": "Creaking Leggings",
+  "item.hazennstuff.creaking_boots": "Creaking Bootswq  `",
+
   "creativetab.hazennstuff.hazennstuff_materials": "Hazen 'n Stuff Materials",
-  "creativetab.hazennstuff.hazennstuff_blocks": "Hazen 'n Stuff Blocks"
+  "creativetab.hazennstuff.hazennstuff_blocks": "Hazen 'n Stuff Blocks",
+  "creativetab.hazennstuff.hazennstuff_equipment": "Hazen 'n Stuff Equipment"
 }

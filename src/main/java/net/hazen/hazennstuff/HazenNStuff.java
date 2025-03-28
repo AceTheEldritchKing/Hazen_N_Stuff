@@ -119,6 +119,15 @@ public class HazenNStuff
         if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS)
             event.accept (ModBlocks.ABYSSLATE);
 
+        if (event.getTabKey() == CreativeModeTabs.COMBAT)
+            event.accept(ModItems.CREAKIN_MASK);
+        if (event.getTabKey() == CreativeModeTabs.COMBAT)
+            event.accept(ModItems.CREAKIN_CHESTPLATE);
+        if (event.getTabKey() == CreativeModeTabs.COMBAT)
+            event.accept(ModItems.CREAKIN_LEGGINGS);
+        if (event.getTabKey() == CreativeModeTabs.COMBAT)
+            event.accept(ModItems.CREAKIN_BOOTS);
+
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
