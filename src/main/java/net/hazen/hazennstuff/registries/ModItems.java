@@ -47,6 +47,23 @@ public class ModItems {
     public static final DeferredHolder<Item, Item> CREAKIN_LEGGINGS = ITEMS.register("creaking_leggings", () -> new CreakingSorcererArmorItem(ArmorItem.Type.LEGGINGS, ItemPropertiesHelper.equipment(1).fireResistant().durability(ArmorItem.Type.LEGGINGS.getDurability(19))));
     public static final DeferredHolder<Item, Item> CREAKIN_BOOTS = ITEMS.register("creaking_boots", () -> new CreakingSorcererArmorItem(ArmorItem.Type.BOOTS, ItemPropertiesHelper.equipment(1).fireResistant().durability(ArmorItem.Type.BOOTS.getDurability(19))));
 
+        /*public static final DeferredItem<ArmorItem> SERAPH_VISOR = ITEMS.register("seraph_visor",
+            () -> new ArmorItem(ModArmorMaterials.SERAPH_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
+                    new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(19))));
+    public static final DeferredItem<ArmorItem> SERAPH_BREASTPLATE = ITEMS.register("seraph_breastplate",
+            () -> new ArmorItem(ModArmorMaterials.SERAPH_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,
+                    new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(19))));
+    public static final DeferredItem<ArmorItem> SERAPH_LEGGINGS = ITEMS.register("seraph_leggings",
+            () -> new ArmorItem(ModArmorMaterials.SERAPH_ARMOR_MATERIALL, ArmorItem.Type.LEGGINGS,
+                    new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(19))));
+    public static final DeferredItem<ArmorItem> SERAPH_TRACERS = ITEMS.register("seraph_tracers",
+            () -> new ArmorItem(ModArmorMaterials.SERAPH_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
+                    new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(19))));*/
+
+    public static final DeferredHolder<Item, Item> SERAPH_VISOR = ITEMS.register("seraph_visor", () -> new CreakingSorcererArmorItem(ArmorItem.Type.HELMET, ItemPropertiesHelper.equipment(1).fireResistant().durability(ArmorItem.Type.HELMET.getDurability(19))));
+    public static final DeferredHolder<Item, Item> SERAPH_BREASTPLATE = ITEMS.register("seraph_breastplate", () -> new CreakingSorcererArmorItem(ArmorItem.Type.CHESTPLATE, ItemPropertiesHelper.equipment(1).fireResistant().durability(ArmorItem.Type.CHESTPLATE.getDurability(19))));
+    public static final DeferredHolder<Item, Item> SERAPH_LEGGINGS = ITEMS.register("seraph_leggings", () -> new CreakingSorcererArmorItem(ArmorItem.Type.LEGGINGS, ItemPropertiesHelper.equipment(1).fireResistant().durability(ArmorItem.Type.LEGGINGS.getDurability(19))));
+    public static final DeferredHolder<Item, Item> SERAPH_TRACERS = ITEMS.register("seraph_tracers", () -> new CreakingSorcererArmorItem(ArmorItem.Type.BOOTS, ItemPropertiesHelper.equipment(1).fireResistant().durability(ArmorItem.Type.BOOTS.getDurability(19))));
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

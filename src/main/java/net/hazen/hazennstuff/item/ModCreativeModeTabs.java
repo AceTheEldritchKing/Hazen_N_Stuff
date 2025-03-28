@@ -20,8 +20,8 @@ public class ModCreativeModeTabs {
 
     public static final Supplier<CreativeModeTab> HAZEN_N_STUFF_MATERIALS = CREATIVE_MODE_TAB.register("hazennstuff_materials",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.ZENALITE.get()))
-                    .withTabsBefore(ResourceLocation.fromNamespaceAndPath(IronsSpellbooks.MODID, "spell_materials_tab"))
-                    .title(Component.translatable("creativetab.hazennstuff.hazennstuff_blocks"))
+                    .withTabsBefore(ResourceLocation.fromNamespaceAndPath(HazenNStuff.MOD_ID, "hazennstuff_blocks"))
+                    .title(Component.translatable("creativetab.hazennstuff.hazennstuff_materials"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.ZENALITE);
                         output.accept(ModItems.RAWZENALITE);
@@ -31,7 +31,6 @@ public class ModCreativeModeTabs {
 
     public static final Supplier<CreativeModeTab> HAZEN_N_STUFF_BLOCKS = CREATIVE_MODE_TAB.register("hazennstuff_blocks",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.ZENALITE_ORE.get()))
-                    .withTabsBefore(ResourceLocation.fromNamespaceAndPath(IronsSpellbooks.MODID, "spell_materials_tab"))
                     .title(Component.translatable("creativetab.hazennstuff.hazennstuff_blocks"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModBlocks.BLOCK_OF_ZENALITE);
@@ -43,8 +42,8 @@ public class ModCreativeModeTabs {
 
     public static final Supplier<CreativeModeTab> HAZEN_N_STUFF_EQUIPMENT = CREATIVE_MODE_TAB.register("hazennstuff_equipment",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.CREAKIN_MASK.get()))
-                    .withTabsBefore(ResourceLocation.fromNamespaceAndPath(IronsSpellbooks.MODID, "blocks_tab"))
-                    .title(Component.translatable("creativetab.hazennstuff.hazennstuff_blocks"))
+                    .withTabsBefore(ResourceLocation.fromNamespaceAndPath(HazenNStuff.MOD_ID, "hazennstuff_materials"))
+                    .title(Component.translatable("creativetab.hazennstuff.hazennstuff_equipment"))
                     .displayItems((itemDisplayParameters, output) -> {
                         // Creaking
                         output.accept(ModItems.CREAKIN_MASK.get());

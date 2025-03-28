@@ -28,6 +28,23 @@ public class ModArmorMaterials {
                 attribute.put(ArmorItem.Type.BODY, 11);
             }), 16, 2f, 0.1f, () -> ModItems.ZENALITE.get());
 
+        public static final Holder<ArmorMaterial> SERAPH_ARMOR_MATERIAL = register("seraph",
+                Util.make(new EnumMap<>(ArmorItem.Type.class), attribute -> {
+                    attribute.put(ArmorItem.Type.BOOTS, 5);
+                    attribute.put(ArmorItem.Type.LEGGINGS, 7);
+                    attribute.put(ArmorItem.Type.CHESTPLATE, 9);
+                    attribute.put(ArmorItem.Type.HELMET, 5);
+                    attribute.put(ArmorItem.Type.BODY, 11);
+                }), 16, 2f, 0.1f, () -> ModItems.ZENALITE.get());
+
+            public static final Holder<ArmorMaterial> LEGIONNAIRE_MATERIAL = register("legionnaire",
+                    Util.make(new EnumMap<>(ArmorItem.Type.class), attribute -> {
+                        attribute.put(ArmorItem.Type.BOOTS, 5);
+                        attribute.put(ArmorItem.Type.LEGGINGS, 7);
+                        attribute.put(ArmorItem.Type.CHESTPLATE, 9);
+                        attribute.put(ArmorItem.Type.HELMET, 5);
+                        attribute.put(ArmorItem.Type.BODY, 11);
+                    }), 16, 2f, 0.1f, () -> ModItems.ZENALITE.get());
 
     private static Holder<ArmorMaterial> register(String name, EnumMap<ArmorItem.Type, Integer> typeProtection,
                                                   int enchantability, float toughness, float knockbackResistance,
