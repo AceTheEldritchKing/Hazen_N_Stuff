@@ -1,11 +1,10 @@
 package net.hazen.hazennstuff.block;
 
 import net.hazen.hazennstuff.HazenNStuff;
-import net.hazen.hazennstuff.item.ModItems;
+import net.hazen.hazennstuff.registries.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.PickaxeItem;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.SoundType;

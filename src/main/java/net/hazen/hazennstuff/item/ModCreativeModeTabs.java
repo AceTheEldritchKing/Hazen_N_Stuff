@@ -3,6 +3,7 @@ package net.hazen.hazennstuff.item;
 import io.redspace.ironsspellbooks.IronsSpellbooks;
 import net.hazen.hazennstuff.HazenNStuff;
 import net.hazen.hazennstuff.block.ModBlocks;
+import net.hazen.hazennstuff.registries.ModItems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
@@ -45,10 +46,13 @@ public class ModCreativeModeTabs {
                     .withTabsBefore(ResourceLocation.fromNamespaceAndPath(IronsSpellbooks.MODID, "blocks_tab"))
                     .title(Component.translatable("creativetab.hazennstuff.hazennstuff_blocks"))
                     .displayItems((itemDisplayParameters, output) -> {
-                        output.accept(ModItems.CREAKIN_MASK);
-                        output.accept(ModItems.CREAKIN_CHESTPLATE);
-                        output.accept(ModItems.CREAKIN_LEGGINGS);
-                        output.accept(ModItems.CREAKIN_BOOTS);
+                        // Creaking
+                        output.accept(ModItems.CREAKIN_MASK.get());
+                        output.accept(ModItems.CREAKIN_CHESTPLATE.get());
+                        output.accept(ModItems.CREAKIN_LEGGINGS.get());
+                        output.accept(ModItems.CREAKIN_BOOTS.get());
+                        // Legionnaire
+                        // Seraph
                     }).build());
 
     public static void register(IEventBus eventBus) {
