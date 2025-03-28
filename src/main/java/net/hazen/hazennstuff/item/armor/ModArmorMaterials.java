@@ -1,6 +1,7 @@
-package net.hazen.hazennstuff.item;
+package net.hazen.hazennstuff.item.armor;
 
 import net.hazen.hazennstuff.HazenNStuff;
+import net.hazen.hazennstuff.registries.ModItems;
 import net.minecraft.Util;
 import net.minecraft.core.Holder;
 import net.minecraft.core.Registry;
