@@ -1,6 +1,5 @@
 package net.hazen.hazennstuff.item;
 
-import io.redspace.ironsspellbooks.IronsSpellbooks;
 import net.hazen.hazennstuff.HazenNStuff;
 import net.hazen.hazennstuff.block.ModBlocks;
 import net.hazen.hazennstuff.registries.ModItems;
@@ -41,16 +40,20 @@ public class ModCreativeModeTabs {
                     }).build());
 
     public static final Supplier<CreativeModeTab> HAZEN_N_STUFF_EQUIPMENT = CREATIVE_MODE_TAB.register("hazennstuff_equipment",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.CREAKIN_MASK.get()))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.CREAKING_MASK.get()))
                     .withTabsBefore(ResourceLocation.fromNamespaceAndPath(HazenNStuff.MOD_ID, "hazennstuff_materials"))
                     .title(Component.translatable("creativetab.hazennstuff.hazennstuff_equipment"))
                     .displayItems((itemDisplayParameters, output) -> {
                         // Creaking
-                        output.accept(ModItems.CREAKIN_MASK.get());
-                        output.accept(ModItems.CREAKIN_CHESTPLATE.get());
-                        output.accept(ModItems.CREAKIN_LEGGINGS.get());
-                        output.accept(ModItems.CREAKIN_BOOTS.get());
+                        output.accept(ModItems.CREAKING_MASK.get());
+                        output.accept(ModItems.CREAKING_CHESTPLATE.get());
+                        output.accept(ModItems.CREAKING_LEGGINGS.get());
+                        output.accept(ModItems.CREAKING_BOOTS.get());
                         // Legionnaire
+                        output.accept(ModItems.SERAPH_VISOR.get());
+                        output.accept(ModItems.SERAPH_BREASTPLATE.get());
+                        output.accept(ModItems.SERAPH_LEGGINGS.get());
+                        output.accept(ModItems.SERAPH_TRACERS.get());
                         // Seraph
                     }).build());
 

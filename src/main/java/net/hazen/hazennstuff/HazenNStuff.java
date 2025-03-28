@@ -111,13 +111,13 @@ public class HazenNStuff
             event.accept (ModBlocks.ABYSSLATE);
 
         /*if (event.getTabKey() == CreativeModeTabs.COMBAT)
-            event.accept(ModItems.CREAKIN_MASK);
+            event.accept(ModItems.CREAKING_MASK);
         if (event.getTabKey() == CreativeModeTabs.COMBAT)
-            event.accept(ModItems.CREAKIN_CHESTPLATE);
+            event.accept(ModItems.CREAKING_CHESTPLATE);
         if (event.getTabKey() == CreativeModeTabs.COMBAT)
-            event.accept(ModItems.CREAKIN_LEGGINGS);
+            event.accept(ModItems.CREAKING_LEGGINGS);
         if (event.getTabKey() == CreativeModeTabs.COMBAT)
-            event.accept(ModItems.CREAKIN_BOOTS);*/
+            event.accept(ModItems.CREAKING_BOOTS);*/
 
     }
 

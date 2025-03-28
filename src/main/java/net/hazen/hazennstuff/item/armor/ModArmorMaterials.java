@@ -28,7 +28,7 @@ public class ModArmorMaterials {
                 attribute.put(ArmorItem.Type.BODY, 11);
             }), 16, 2f, 0.1f, () -> ModItems.ZENALITE.get());
 
-        public static final Holder<ArmorMaterial> SERAPH_ARMOR_MATERIAL = register("seraph",
+        public static final Holder<ArmorMaterial> SERAPH_MATERIAL = register("seraph",
                 Util.make(new EnumMap<>(ArmorItem.Type.class), attribute -> {
                     attribute.put(ArmorItem.Type.BOOTS, 5);
                     attribute.put(ArmorItem.Type.LEGGINGS, 7);
