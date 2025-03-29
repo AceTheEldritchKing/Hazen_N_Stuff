@@ -26,7 +26,7 @@
                   }
                 }
               ],
-              "name": "hazennstuff:zenalite_ore"
+              "name": "hazennstuff:zenalite_stone_ore"
             },
             {
               "type": "minecraft:item",
@@ -48,5 +48,5 @@
       "rolls": 1.0
     }
   ],
-  "random_sequence": "hazennstuff:blocks/zenalite_ore"
+  "random_sequence": "hazennstuff:blocks/zenalite_stone_ore"
 }
