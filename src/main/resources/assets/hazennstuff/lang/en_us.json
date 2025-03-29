@@ -4,11 +4,15 @@
   "item.hazennstuff.raw_zenalite": "Raw Zenalite",
   "item.hazennstuff.starkissed_zenalite": "Starkissed Zenalite",
 
-  "block.hazennstuff.zenalite_abysslateore": "Zenalite Abysslate Ore",
+  "item.hazennstuff.ruptured": "Mana Crystal",
+
+  "block.hazennstuff.zenalite_abysslate_ore": "Zenalite Abysslate Ore",
   "block.hazennstuff.phantasmium": "Phantasmium",
   "block.hazennstuff.zenalite_bricks": "Zenalite Bricks",
   "block.hazennstuff.block_of_zenalite": "Block of Zenalite",
   "block.hazennstuff.abysslate": "Abysslate",
+  "block.hazennstuff.zenalite_deepslate_ore": "Zenalite Deepslate Ore",
+  "block.hazennstuff.zenalite_stone_ore": "Zenalite Stone Ore",
 
   "item.hazennstuff.creaking_mask": "Creaking Mask",
   "item.hazennstuff.creaking_chestplate": "Creaking Chestplate",

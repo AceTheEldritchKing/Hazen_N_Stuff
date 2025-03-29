@@ -100,7 +100,7 @@ public class HazenNStuff
             event.accept(ModItems.STARKISSEDZENALITE);
 
         if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS)
-            event.accept (ModBlocks.ZENALITE_ORE);
+            event.accept (ModBlocks.ZENALITE_ABYSSLATE_ORE);
         if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS)
             event.accept (ModBlocks.ZENALITE_BRICKS);
         if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS)
@@ -109,6 +109,11 @@ public class HazenNStuff
             event.accept (ModBlocks.BLOCK_OF_ZENALITE);
         if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS)
             event.accept (ModBlocks.ABYSSLATE);
+        if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS)
+            event.accept (ModBlocks.ZENALITE_DEEPSLATE_ORE);
+        if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS)
+            event.accept (ModBlocks.ZENALITE_STONE_ORE);
+
 
         /*if (event.getTabKey() == CreativeModeTabs.COMBAT)
             event.accept(ModItems.CREAKING_MASK);

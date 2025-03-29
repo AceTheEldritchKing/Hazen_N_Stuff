@@ -29,12 +29,14 @@ public class ModCreativeModeTabs {
                     }).build());
 
     public static final Supplier<CreativeModeTab> HAZEN_N_STUFF_BLOCKS = CREATIVE_MODE_TAB.register("hazennstuff_blocks",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.ZENALITE_ORE.get()))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.ZENALITE_ABYSSLATE_ORE.get()))
                     .title(Component.translatable("creativetab.hazennstuff.hazennstuff_blocks"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModBlocks.BLOCK_OF_ZENALITE);
                         output.accept(ModBlocks.ZENALITE_BRICKS);
-                        output.accept(ModBlocks.ZENALITE_ORE);
+                        output.accept(ModBlocks.ZENALITE_DEEPSLATE_ORE);
+                        output.accept(ModBlocks.ZENALITE_STONE_ORE);
+                        output.accept(ModBlocks.ZENALITE_ABYSSLATE_ORE);
                         output.accept(ModBlocks.ABYSSLATE);
                         output.accept(ModBlocks.PHANTASMIUM);
                     }).build());
