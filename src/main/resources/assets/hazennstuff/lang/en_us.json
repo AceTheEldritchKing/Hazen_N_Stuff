@@ -3,11 +3,16 @@
   "item.hazennstuff.ominous_alloy": "Ominous Alloy",
   "item.hazennstuff.raw_zenalite": "Raw Zenalite",
   "item.hazennstuff.starkissed_zenalite": "Starkissed Zenalite",
+  "item.hazennstuff.divine_mold": "Divine Mold",
 
-  "item.hazennstuff.ruptured": "Mana Crystal",
-  "item.hazennstuff.refined": "Mana Crystal",
-  "item.hazennstuff.reinforced": "Mana Crystal",
-  "item.hazennstuff.radiance": "Mana Crystal",
+
+
+  "item.hazennstuff.ruptured": "Ruptured Mana Crystal",
+  "item.hazennstuff.refined": "Refined Mana Crystal",
+  "item.hazennstuff.reinforced": "Reinforced Mana Crystal",
+  "item.hazennstuff.radiance": "Radiance Mana Crystal",
+
+
 
   "block.hazennstuff.zenalite_abysslate_ore": "Zenalite Abysslate Ore",
   "block.hazennstuff.phantasmium": "Phantasmium",
@@ -17,18 +22,32 @@
   "block.hazennstuff.zenalite_deepslate_ore": "Zenalite Deepslate Ore",
   "block.hazennstuff.zenalite_stone_ore": "Zenalite Stone Ore",
 
+
+
   "item.hazennstuff.creaking_mask": "Creaking Mask",
   "item.hazennstuff.creaking_chestplate": "Creaking Chestplate",
   "item.hazennstuff.creaking_leggings": "Creaking Leggings",
   "item.hazennstuff.creaking_boots": "Creaking Boots",
+
   "item.hazennstuff.seraph_visor": "Seraph Visor",
   "item.hazennstuff.seraph_breastplate": "Seraph Breastplate",
   "item.hazennstuff.seraph_leggings": "Seraph Leggings",
   "item.hazennstuff.seraph_tracers": "Seraph Tracers",
 
+  "item.hazennstuff.legionnaire_crown": "Legionnaire Crown",
+  "item.hazennstuff.legionnaire_breastplate": "Legionnaire Breastplate",
+  "item.hazennstuff.legionnaire_leggings": "Legionnaire Leggings",
+  "item.hazennstuff.legionnaire_boots": "legionnaire Boots",
+
+
+
+  "curios.modifiers.mana_crystal": "When using the Mana Crystal:",
+
 
 
   "curios.identifier.mana_crystal": "Mana Crystal",
+
+
 
   "creativetab.hazennstuff.hazennstuff_materials": "Hazen 'n Stuff Materials",
   "creativetab.hazennstuff.hazennstuff_blocks": "Hazen 'n Stuff Blocks",

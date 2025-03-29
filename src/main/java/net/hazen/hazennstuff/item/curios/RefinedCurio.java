@@ -10,11 +10,12 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.ai.attributes.Attribute;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Rarity;
 import top.theillusivec4.curios.api.SlotContext;
 
 public class RefinedCurio extends CurioBaseItem {
     public RefinedCurio() {
-        super(ItemPropertiesHelper.equipment().stacksTo(1).fireResistant());
+        super(ItemPropertiesHelper.equipment().stacksTo(1).fireResistant().rarity(Rarity.UNCOMMON));
     }
 
     //naur
@@ -22,7 +23,8 @@ public class RefinedCurio extends CurioBaseItem {
     public Multimap<Holder<Attribute>, AttributeModifier> getAttributeModifiers(SlotContext slotContext, ResourceLocation id, ItemStack stack) {
         Multimap<Holder<Attribute>, AttributeModifier> attr = LinkedHashMultimap.create();
         //The attributes of the curio
-        attr.put(AttributeRegistry.MAX_MANA, new AttributeModifier(id, 0.50, AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
+        attr.put(AttributeRegistry.MAX_MANA, new AttributeModifier(id, 150.0, AttributeModifier.Operation.ADD_VALUE));
+        attr.put(AttributeRegistry.MANA_REGEN, new AttributeModifier(id, 0.10, AttributeModifier.Operation.ADD_MULTIPLIED_BASE));
         return attr;
     }
 }

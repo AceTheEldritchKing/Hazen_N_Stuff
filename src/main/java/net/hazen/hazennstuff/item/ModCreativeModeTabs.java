@@ -52,12 +52,24 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.CREAKING_LEGGINGS.get());
                         output.accept(ModItems.CREAKING_BOOTS.get());
                         // Legionnaire
+                        output.accept(ModItems.LEGIONNAIRE_CROWN.get());
+                        output.accept(ModItems.LEGIONNAIRE_BREASTPLATE.get());
+                        output.accept(ModItems.LEGIONNAIRE_LEGGINGS.get());
+                        output.accept(ModItems.LEGIONNAIRE_BOOTS.get());
+                        // Seraph
                         output.accept(ModItems.SERAPH_VISOR.get());
                         output.accept(ModItems.SERAPH_BREASTPLATE.get());
                         output.accept(ModItems.SERAPH_LEGGINGS.get());
                         output.accept(ModItems.SERAPH_TRACERS.get());
-                        // Seraph
+
+                        //Curios
+                        output.accept(ModItems.RUPTURED.get());
+                        output.accept(ModItems.REFINED.get());
+                        output.accept(ModItems.REINFORCED.get());
+                        output.accept(ModItems.RADIANCE.get());
                     }).build());
+
+
 
     public static void register(IEventBus eventBus) {
         CREATIVE_MODE_TAB.register(eventBus);

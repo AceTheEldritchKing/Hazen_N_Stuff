@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "nEn",
+    "iNi",
+    "ngn"
+  ],
+  "key": {
+    "n": {
+      "item": "hazennstuff:zenalite"
+    },
+    "E": {
+      "item": "irons_spellbooks:mana_upgrade_orb"
+    },
+    "i": {
+      "item": "irons_spellbooks:mithril_ingot"
+    },
+    "N": {
+      "item": "hazennstuff:refined"
+    },
+    "g": {
+      "item": "irons_spellbooks:pyrium_ingot"
+    }
+  },
+  "result": {
+    "id": "hazennstuff:reinforced",
+    "count": 1
+  }
+}

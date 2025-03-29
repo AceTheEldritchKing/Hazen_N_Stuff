@@ -10,11 +10,13 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.ai.attributes.Attribute;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Rarity;
+import org.w3c.dom.Attr;
 import top.theillusivec4.curios.api.SlotContext;
 
 public class RadianceCurio extends CurioBaseItem {
     public RadianceCurio() {
-        super(ItemPropertiesHelper.equipment().stacksTo(1).fireResistant());
+        super(ItemPropertiesHelper.equipment().stacksTo(1).fireResistant().rarity(Rarity.EPIC));
     }
 
     //naur
@@ -23,6 +25,9 @@ public class RadianceCurio extends CurioBaseItem {
         Multimap<Holder<Attribute>, AttributeModifier> attr = LinkedHashMultimap.create();
         //The attributes of the curio
         attr.put(AttributeRegistry.MAX_MANA, new AttributeModifier(id, 300.0, AttributeModifier.Operation.ADD_VALUE));
+        attr.put(AttributeRegistry.MANA_REGEN, new AttributeModifier(id, 0.15, AttributeModifier.Operation.ADD_MULTIPLIED_BASE));
+        attr.put(AttributeRegistry.COOLDOWN_REDUCTION, new AttributeModifier(id, 0.10, AttributeModifier.Operation.ADD_MULTIPLIED_BASE));
+        attr.put(AttributeRegistry.SPELL_POWER, new AttributeModifier(id, 0.05, AttributeModifier.Operation.ADD_MULTIPLIED_BASE));
         return attr;
     }
 }
