@@ -88,9 +88,11 @@ public class ModArmorItem extends ArmorItem implements GeoItem {
     // Geckolib
     @Override
     public void registerControllers(AnimatableManager.ControllerRegistrar controllers) {
-        controllers.add(new AnimationController<ModArmorItem>(this, "controller", this::predicate));
+        // Don't put anything in here, no need to
+        //controllers.add(new AnimationController<ModArmorItem>(this, "controller", this::predicate));
     }
 
+    // Don't do anything w/ this
     private PlayState predicate(AnimationState<ModArmorItem> itemAnimationState)
     {
         itemAnimationState.getController().setAnimation(RawAnimation.begin().thenLoop("idle"));
