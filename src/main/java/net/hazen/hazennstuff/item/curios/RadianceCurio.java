@@ -22,7 +22,7 @@ public class RadianceCurio extends CurioBaseItem {
     public Multimap<Holder<Attribute>, AttributeModifier> getAttributeModifiers(SlotContext slotContext, ResourceLocation id, ItemStack stack) {
         Multimap<Holder<Attribute>, AttributeModifier> attr = LinkedHashMultimap.create();
         //The attributes of the curio
-        attr.put(AttributeRegistry.MAX_MANA, new AttributeModifier(id, 0.50, AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
+        attr.put(AttributeRegistry.MAX_MANA, new AttributeModifier(id, 300.0, AttributeModifier.Operation.ADD_VALUE));
         return attr;
     }
 }

@@ -1,6 +1,10 @@
 {
   "replace": false,
   "values" :[
-    "hazennstuff:ruptured"
+    "hazennstuff:ruptured",
+    "hazennstuff:refined",
+    "hazennstuff:reinforced",
+    "hazennstuff:radiance"
+
   ]
 }

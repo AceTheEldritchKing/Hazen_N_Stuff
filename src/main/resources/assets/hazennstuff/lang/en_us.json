@@ -5,6 +5,9 @@
   "item.hazennstuff.starkissed_zenalite": "Starkissed Zenalite",
 
   "item.hazennstuff.ruptured": "Mana Crystal",
+  "item.hazennstuff.refined": "Mana Crystal",
+  "item.hazennstuff.reinforced": "Mana Crystal",
+  "item.hazennstuff.radiance": "Mana Crystal",
 
   "block.hazennstuff.zenalite_abysslate_ore": "Zenalite Abysslate Ore",
   "block.hazennstuff.phantasmium": "Phantasmium",
@@ -22,6 +25,10 @@
   "item.hazennstuff.seraph_breastplate": "Seraph Breastplate",
   "item.hazennstuff.seraph_leggings": "Seraph Leggings",
   "item.hazennstuff.seraph_tracers": "Seraph Tracers",
+
+
+
+  "curios.identifier.mana_crystal": "Mana Crystal",
 
   "creativetab.hazennstuff.hazennstuff_materials": "Hazen 'n Stuff Materials",
   "creativetab.hazennstuff.hazennstuff_blocks": "Hazen 'n Stuff Blocks",
