@@ -12,7 +12,7 @@ import software.bernie.geckolib.renderer.GeoArmorRenderer;
 public class SeraphArmorItem extends ImbuableModArmorItem {
     public SeraphArmorItem(Type type, Properties settings) {
         // Add in your armor tier + additional attributes for your item
-        super(ModArmorMaterials.CREAKING_SORCERER_MATERIAL, type, settings,
+        super(ModArmorMaterials.SERAPH_MATERIAL, type, settings,
                 new AttributeContainer(AttributeRegistry.MAX_MANA, 150.0, AttributeModifier.Operation.ADD_VALUE),
                 new AttributeContainer(AttributeRegistry.HOLY_SPELL_POWER, .15, AttributeModifier.Operation.ADD_VALUE),
                 new AttributeContainer(AttributeRegistry.CASTING_MOVESPEED, .05, AttributeModifier.Operation.ADD_VALUE),

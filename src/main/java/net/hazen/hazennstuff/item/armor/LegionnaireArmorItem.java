@@ -25,7 +25,7 @@ import software.bernie.geckolib.renderer.GeoArmorRenderer;
 public class LegionnaireArmorItem extends ModArmorItem {
     public LegionnaireArmorItem(Type type, Properties settings) {
         super(ModArmorMaterials.LEGIONNAIRE_MATERIAL, type, settings,
-                new AttributeContainer(AttributeRegistry.SPELL_RESIST, .25, AttributeModifier.Operation.ADD_VALUE),
+                new AttributeContainer(AttributeRegistry.SPELL_RESIST, .05, AttributeModifier.Operation.ADD_VALUE),
                 new AttributeContainer(AttributeRegistry.FIRE_SPELL_POWER, .05, AttributeModifier.Operation.ADD_VALUE),
                 new AttributeContainer(AttributeRegistry.CASTING_MOVESPEED, .15, AttributeModifier.Operation.ADD_VALUE)
         );
