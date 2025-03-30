@@ -25,7 +25,7 @@ public class ImbuableModArmorItem extends ModArmorItem implements IPresetSpellCo
         // If you only want chestplates to be imbued, remove the || section of the if statement
         if (itemStack.getItem() instanceof ArmorItem armorItem)
         {
-            if (armorItem.getType() == Type.CHESTPLATE || armorItem.getType() == Type.HELMET)
+            if (armorItem.getType() == Type.CHESTPLATE)
             {
                 if (!ISpellContainer.isSpellContainer(itemStack))
                 {

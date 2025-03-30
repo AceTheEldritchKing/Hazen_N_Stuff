@@ -21,29 +21,29 @@ import java.util.function.Supplier;
 public class ModArmorMaterials {
     public static final Holder<ArmorMaterial> CREAKING_SORCERER_MATERIAL = register("creaking",
             Util.make(new EnumMap<>(ArmorItem.Type.class), attribute -> {
-                attribute.put(ArmorItem.Type.BOOTS, 5);
-                attribute.put(ArmorItem.Type.LEGGINGS, 7);
-                attribute.put(ArmorItem.Type.CHESTPLATE, 9);
-                attribute.put(ArmorItem.Type.HELMET, 5);
-                attribute.put(ArmorItem.Type.BODY, 11);
+                attribute.put(ArmorItem.Type.BOOTS, 6);
+                attribute.put(ArmorItem.Type.LEGGINGS, 8);
+                attribute.put(ArmorItem.Type.CHESTPLATE, 10);
+                attribute.put(ArmorItem.Type.HELMET, 6);
+                attribute.put(ArmorItem.Type.BODY, 12);
             }), 16, 2f, 0.1f, () -> ModItems.ZENALITE.get());
 
         public static final Holder<ArmorMaterial> SERAPH_MATERIAL = register("seraph",
                 Util.make(new EnumMap<>(ArmorItem.Type.class), attribute -> {
-                    attribute.put(ArmorItem.Type.BOOTS, 5);
-                    attribute.put(ArmorItem.Type.LEGGINGS, 7);
-                    attribute.put(ArmorItem.Type.CHESTPLATE, 9);
-                    attribute.put(ArmorItem.Type.HELMET, 5);
-                    attribute.put(ArmorItem.Type.BODY, 11);
+                    attribute.put(ArmorItem.Type.BOOTS, 6);
+                    attribute.put(ArmorItem.Type.LEGGINGS, 8);
+                    attribute.put(ArmorItem.Type.CHESTPLATE, 10);
+                    attribute.put(ArmorItem.Type.HELMET, 6);
+                    attribute.put(ArmorItem.Type.BODY, 12);
                 }), 16, 2f, 0.1f, () -> ModItems.ZENALITE.get());
 
             public static final Holder<ArmorMaterial> LEGIONNAIRE_MATERIAL = register("legionnaire",
                     Util.make(new EnumMap<>(ArmorItem.Type.class), attribute -> {
-                        attribute.put(ArmorItem.Type.BOOTS, 5);
-                        attribute.put(ArmorItem.Type.LEGGINGS, 7);
-                        attribute.put(ArmorItem.Type.CHESTPLATE, 9);
-                        attribute.put(ArmorItem.Type.HELMET, 5);
-                        attribute.put(ArmorItem.Type.BODY, 11);
+                        attribute.put(ArmorItem.Type.BOOTS, 7);
+                        attribute.put(ArmorItem.Type.LEGGINGS, 8);
+                        attribute.put(ArmorItem.Type.CHESTPLATE, 10);
+                        attribute.put(ArmorItem.Type.HELMET, 6);
+                        attribute.put(ArmorItem.Type.BODY, 12);
                     }), 16, 2f, 0.1f, () -> ModItems.ZENALITE.get());
 
     private static Holder<ArmorMaterial> register(String name, EnumMap<ArmorItem.Type, Integer> typeProtection,

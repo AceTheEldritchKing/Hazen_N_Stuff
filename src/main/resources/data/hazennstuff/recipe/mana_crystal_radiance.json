@@ -1,7 +1,7 @@
 {
   "type": "minecraft:smithing_transform",
   "template": {
-    "item": "irons_spellbooks:arcane_rune"
+    "item": "hazennstuff:divine_mold"
   },
   "base": {
     "item": "hazennstuff:reinforced"

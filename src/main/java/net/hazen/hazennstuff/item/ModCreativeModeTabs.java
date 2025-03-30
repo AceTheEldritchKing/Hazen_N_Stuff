@@ -26,6 +26,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.RAWZENALITE);
                         output.accept(ModItems.STARKISSEDZENALITE);
                         output.accept(ModItems.OMINOUSALLOY);
+                        output.accept(ModItems.DIVINE_MOLD);
                     }).build());
 
     public static final Supplier<CreativeModeTab> HAZEN_N_STUFF_BLOCKS = CREATIVE_MODE_TAB.register("hazennstuff_blocks",
