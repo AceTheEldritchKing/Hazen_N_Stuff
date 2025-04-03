@@ -1,6 +1,7 @@
 package net.hazen.hazennstuff;
 
 import net.hazen.hazennstuff.block.ModBlocks;
+import net.hazen.hazennstuff.effect.ModEffects;
 import net.hazen.hazennstuff.item.ModCreativeModeTabs;
 import net.hazen.hazennstuff.registries.ModItems;
 import org.slf4j.Logger;
@@ -65,6 +66,8 @@ public class HazenNStuff
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+
+        ModEffects.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
