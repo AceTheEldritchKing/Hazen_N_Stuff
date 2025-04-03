@@ -62,6 +62,12 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.SERAPH_BREASTPLATE.get());
                         output.accept(ModItems.SERAPH_LEGGINGS.get());
                         output.accept(ModItems.SERAPH_TRACERS.get());
+                        // Scourge
+                        output.accept(ModItems.CHARGED_SCOURGE_MASK.get());
+                        output.accept(ModItems.CHARGED_SCOURGE_SCALE_MAIL.get());
+                        output.accept(ModItems.CHARGED_SCOURGE_KNEEPADS.get());
+                        output.accept(ModItems.CHARGED_SCOURGE_TREADS.get());
+
 
                         //Curios
                         output.accept(ModItems.RUPTURED.get());

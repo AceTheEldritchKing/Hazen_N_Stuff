@@ -32,6 +32,7 @@ import java.util.function.Supplier;
 public class ModArmorItem extends ArmorItem implements GeoItem {
     // I copied this stuff from DTE, once you have this armor item class set up
     // You don't need to touch it any further
+
     private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
     private final Supplier<ItemAttributeModifiers> defaultModifiers;
 

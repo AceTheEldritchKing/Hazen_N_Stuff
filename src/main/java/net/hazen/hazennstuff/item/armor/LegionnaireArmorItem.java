@@ -11,23 +11,14 @@ import net.neoforged.api.distmarker.OnlyIn;
 import org.w3c.dom.Attr;
 import software.bernie.geckolib.renderer.GeoArmorRenderer;
 
-// Halp, how make this one not Imbueable. qwq
-// Halp, how make this one not Imbueable. qwq
-// Halp, how make this one not Imbueable. qwq
-// Halp, how make this one not Imbueable. qwq
-// Halp, how make this one not Imbueable. qwq
-// Halp, how make this one not Imbueable. qwq
-// Halp, how make this one not Imbueable. qwq
-// Halp, how make this one not Imbueable. qwq
-// Halp, how make this one not Imbueable. qwq
-// Halp, how make this one not Imbueable. qwq
-
 public class LegionnaireArmorItem extends ModArmorItem {
     public LegionnaireArmorItem(Type type, Properties settings) {
         super(ModArmorMaterials.LEGIONNAIRE_MATERIAL, type, settings,
                 new AttributeContainer(AttributeRegistry.SPELL_RESIST, .05, AttributeModifier.Operation.ADD_VALUE),
-                new AttributeContainer(AttributeRegistry.FIRE_SPELL_POWER, .05, AttributeModifier.Operation.ADD_VALUE),
-                new AttributeContainer(AttributeRegistry.CASTING_MOVESPEED, .15, AttributeModifier.Operation.ADD_VALUE)
+                new AttributeContainer(AttributeRegistry.FIRE_SPELL_POWER, .03, AttributeModifier.Operation.ADD_VALUE),
+                new AttributeContainer(AttributeRegistry.CASTING_MOVESPEED, .15, AttributeModifier.Operation.ADD_VALUE),
+                new AttributeContainer(Attributes.ATTACK_DAMAGE,0.5, AttributeModifier.Operation.ADD_VALUE),
+                new AttributeContainer(Attributes.ATTACK_SPEED,0.5, AttributeModifier.Operation.ADD_VALUE)
         );
     }
 
