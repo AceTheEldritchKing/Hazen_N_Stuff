@@ -5,7 +5,6 @@ import io.redspace.ironsspellbooks.entity.armor.GenericCustomArmorRenderer;
 import io.redspace.ironsspellbooks.item.weapons.AttributeContainer;
 import net.hazen.hazennstuff.effect.ModEffects;
 import net.hazen.hazennstuff.entity.armor.CreakingSorcererArmorModel;
-import net.hazen.hazennstuff.entity.armor.LegionnaireArmorModel;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
@@ -33,7 +32,7 @@ public class CreakingSorcererArmorItem extends ImbuableModArmorItem {
     @Override
     @OnlyIn(Dist.CLIENT)
     public GeoArmorRenderer<?> supplyRenderer() {
-        return new GenericCustomArmorRenderer<>(new LegionnaireArmorModel());
+        return new GenericCustomArmorRenderer<>(new CreakingSorcererArmorModel());
     }
 
     @Override
@@ -50,9 +49,9 @@ public class CreakingSorcererArmorItem extends ImbuableModArmorItem {
     }
 
     private boolean isWearingFullSet(Player player) {
-        return player.getItemBySlot(ArmorItem.Type.HELMET.getSlot()).getItem() instanceof LegionnaireArmorItem &&
-                player.getItemBySlot(ArmorItem.Type.CHESTPLATE.getSlot()).getItem() instanceof LegionnaireArmorItem &&
-                player.getItemBySlot(ArmorItem.Type.LEGGINGS.getSlot()).getItem() instanceof LegionnaireArmorItem &&
-                player.getItemBySlot(ArmorItem.Type.BOOTS.getSlot()).getItem() instanceof LegionnaireArmorItem;
+        return player.getItemBySlot(ArmorItem.Type.HELMET.getSlot()).getItem() instanceof CreakingSorcererArmorItem &&
+                player.getItemBySlot(ArmorItem.Type.CHESTPLATE.getSlot()).getItem() instanceof CreakingSorcererArmorItem &&
+                player.getItemBySlot(ArmorItem.Type.LEGGINGS.getSlot()).getItem() instanceof CreakingSorcererArmorItem &&
+                player.getItemBySlot(ArmorItem.Type.BOOTS.getSlot()).getItem() instanceof CreakingSorcererArmorItem;
     }
 }
