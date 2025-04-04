@@ -32,7 +32,7 @@ public class LegionnaireArmorItem extends ModArmorItem {
     public LegionnaireArmorItem(Type type, Properties settings) {
         super(ModArmorMaterials.LEGIONNAIRE_MATERIAL, type, settings,
                 new AttributeContainer(AttributeRegistry.SPELL_RESIST, .05, AttributeModifier.Operation.ADD_VALUE),
-                new AttributeContainer(Attributes.MAX_HEALTH, .05, AttributeModifier.Operation.ADD_VALUE)
+                new AttributeContainer(Attributes.MAX_HEALTH, 1.25, AttributeModifier.Operation.ADD_VALUE)
         );
     }
 

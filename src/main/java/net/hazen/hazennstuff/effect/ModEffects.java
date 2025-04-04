@@ -40,6 +40,24 @@ public class ModEffects {
                             ResourceLocation.fromNamespaceAndPath(HazenNStuff.MOD_ID, "call_of_the_garden"), 0.2f,
                             AttributeModifier.Operation.ADD_MULTIPLIED_BASE));
 
+    public static final Holder<MobEffect> SERAPHS_MIGHT_EFFECT = MOB_EFFECTS.register("seraphs_might",
+            () -> new TyrantsGraceEffect(MobEffectCategory.BENEFICIAL, 0xfbb741)
+                    .addAttributeModifier(AttributeRegistry.CASTING_MOVESPEED,
+                            ResourceLocation.fromNamespaceAndPath(HazenNStuff.MOD_ID, "seraphs_might"), 0.2f,
+                            AttributeModifier.Operation.ADD_MULTIPLIED_BASE)
+                    .addAttributeModifier(AttributeRegistry.SPELL_RESIST,
+                            ResourceLocation.fromNamespaceAndPath(HazenNStuff.MOD_ID, "seraphs_might"), 0.2f,
+                            AttributeModifier.Operation.ADD_MULTIPLIED_BASE));
+
+    public static final Holder<MobEffect> SCOURGES_GORGE_EFFECT = MOB_EFFECTS.register("scourges_gorge",
+            () -> new TyrantsGraceEffect(MobEffectCategory.BENEFICIAL, 0xfbb741)
+                    .addAttributeModifier(AttributeRegistry.CASTING_MOVESPEED,
+                            ResourceLocation.fromNamespaceAndPath(HazenNStuff.MOD_ID, "scourges_gorge"), 0.2f,
+                            AttributeModifier.Operation.ADD_MULTIPLIED_BASE)
+                    .addAttributeModifier(AttributeRegistry.SPELL_RESIST,
+                            ResourceLocation.fromNamespaceAndPath(HazenNStuff.MOD_ID, "scourges_gorge"), 0.2f,
+                            AttributeModifier.Operation.ADD_MULTIPLIED_BASE));
+
     public static void register(IEventBus eventBus) {
         MOB_EFFECTS.register(eventBus);
     }
