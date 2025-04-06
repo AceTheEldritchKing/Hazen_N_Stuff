@@ -2,89 +2,97 @@ package net.hazen.hazennstuff.item.armor;
 
 import net.hazen.hazennstuff.HazenNStuff;
 import net.hazen.hazennstuff.registries.ModItems;
-import net.hazen.hazennstuff.sound.ModSoundEvents;
 import net.hazen.hazennstuff.sound.ModSounds;
 import net.minecraft.Util;
-import net.minecraft.client.resources.sounds.Sound;
 import net.minecraft.core.Holder;
-import net.minecraft.core.Registry;
-import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterial;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.crafting.Ingredient;
+import net.neoforged.bus.api.IEventBus;
+import net.neoforged.neoforge.registries.DeferredHolder;
+import net.neoforged.neoforge.registries.DeferredRegister;
 
 import java.util.EnumMap;
 import java.util.List;
 import java.util.function.Supplier;
 
 public class ModArmorMaterials {
-    public static final Holder<ArmorMaterial> CREAKING_SORCERER_MATERIAL = register("creaking",
-            Util.make(new EnumMap<>(ArmorItem.Type.class), attribute -> {
-                attribute.put(ArmorItem.Type.BOOTS, 6);
-                attribute.put(ArmorItem.Type.LEGGINGS, 8);
-                attribute.put(ArmorItem.Type.CHESTPLATE, 10);
-                attribute.put(ArmorItem.Type.HELMET, 6);
-                attribute.put(ArmorItem.Type.BODY, 12);
-            }), 16, 2f, 0.1f, () -> ModItems.ZENALITE.get());
+    private static final DeferredRegister<ArmorMaterial> ARMOR_MATERIALS = DeferredRegister.create(Registries.ARMOR_MATERIAL, HazenNStuff.MOD_ID);
 
+    public static DeferredHolder<ArmorMaterial, ArmorMaterial> CREAKING_SORCERER_MATERIAL = register("creaking",
+            warlockArmorMap(),
+            16,
+            SoundEvents.ARMOR_EQUIP_LEATHER,
+            () -> Ingredient.of(ModItems.ZENALITE.get()),
+            2,
+            0.1F);
 
-    public static final Holder<ArmorMaterial> SERAPH_MATERIAL = register("seraph",
-                Util.make(new EnumMap<>(ArmorItem.Type.class), attribute -> {
-                    attribute.put(ArmorItem.Type.BOOTS, 6);
-                    attribute.put(ArmorItem.Type.LEGGINGS, 8);
-                    attribute.put(ArmorItem.Type.CHESTPLATE, 10);
-                    attribute.put(ArmorItem.Type.HELMET, 6);
-                    attribute.put(ArmorItem.Type.BODY, 12);
-                }), 16, 2f, 0.1f, () -> ModItems.ZENALITE.get());
+    public static DeferredHolder<ArmorMaterial, ArmorMaterial> SERAPH_MATERIAL = register("seraph",
+            warlockArmorMap(),
+            16,
+            SoundEvents.ARMOR_EQUIP_LEATHER,
+            () -> Ingredient.of(ModItems.ZENALITE.get()),
+            2,
+            0.1F);
 
+    public static DeferredHolder<ArmorMaterial, ArmorMaterial> LEGIONNAIRE_MATERIAL = register("legionnaire",
+            warlockArmorMap(),
+            16,
+            SoundEvents.ARMOR_EQUIP_LEATHER,
+            () -> Ingredient.of(ModItems.ZENALITE.get()),
+            2,
+            0.1F);
 
+    public static DeferredHolder<ArmorMaterial, ArmorMaterial> CHARGED_SCOURGE_MATERIAL = register("scourge",
+            warlockArmorMap(),
+            16,
+            SoundEvents.ARMOR_EQUIP_LEATHER,
+            () -> Ingredient.of(ModItems.ZENALITE.get()),
+            2,
+            0.1F);
 
-    public static final Holder<ArmorMaterial> LEGIONNAIRE_MATERIAL = register("legionnaire",
-                    Util.make(new EnumMap<>(ArmorItem.Type.class), attribute -> {
-                        attribute.put(ArmorItem.Type.BOOTS, 6);
-                        attribute.put(ArmorItem.Type.LEGGINGS, 8);
-                        attribute.put(ArmorItem.Type.CHESTPLATE, 10);
-                        attribute.put(ArmorItem.Type.HELMET, 6);
-                        attribute.put(ArmorItem.Type.BODY, 12);
-                    }), 16, 2f, 0.1f, () -> ModItems.ZENALITE.get());
+    public static DeferredHolder<ArmorMaterial, ArmorMaterial> SOUL_FLAME_MATERIAL = register("soul_flame",
+            warlockArmorMap(),
+            16,
+            ModSounds.SOUL_FLAME_EQUIP,
+            () -> Ingredient.of(ModItems.ZENALITE.get()),
+            2,
+            0.1F);
 
+    private static DeferredHolder<ArmorMaterial, ArmorMaterial> register(
+            String name,
+            EnumMap<ArmorItem.Type, Integer> defense,
+            int enchantmentValue,
+            Holder<SoundEvent> equipSound,
+            Supplier<Ingredient> repairIngredient,
+            float toughness,
+            float knockbackResistance
+    )
+    {
+        List<ArmorMaterial.Layer> list = List.of(new ArmorMaterial.Layer(HazenNStuff.id(name)));
+        return ARMOR_MATERIALS.register(name, () -> new ArmorMaterial(defense, enchantmentValue, equipSound, repairIngredient, list, toughness, knockbackResistance));
+    }
 
-    public static final Holder<ArmorMaterial> CHARGED_SCOURGE_MATERIAL = register("scourge",
-            Util.make(new EnumMap<>(ArmorItem.Type.class), attribute -> {
-                attribute.put(ArmorItem.Type.BOOTS, 6);
-                attribute.put(ArmorItem.Type.LEGGINGS, 8);
-                attribute.put(ArmorItem.Type.CHESTPLATE, 10);
-                attribute.put(ArmorItem.Type.HELMET, 6);
-                attribute.put(ArmorItem.Type.BODY, 12);
-            }), 16, 2f, 0.1f, () -> ModItems.ZENALITE.get());
+    public static EnumMap<ArmorItem.Type, Integer> makeArmorMap(int helmet, int chestplate, int leggings, int boots)
+    {
+        return Util.make(new EnumMap<>(ArmorItem.Type.class), (typeIntegerEnumMap) -> {
+            typeIntegerEnumMap.put(ArmorItem.Type.HELMET, helmet);
+            typeIntegerEnumMap.put(ArmorItem.Type.CHESTPLATE, chestplate);
+            typeIntegerEnumMap.put(ArmorItem.Type.LEGGINGS, leggings);
+            typeIntegerEnumMap.put(ArmorItem.Type.BOOTS, boots);
+        });
+    }
 
-    public static final Holder<ArmorMaterial> SOUL_FLAME_MATERIAL = register("soul_flame",
-            Util.make(new EnumMap<>(ArmorItem.Type.class), attribute -> {
-                attribute.put(ArmorItem.Type.BOOTS, 6);
-                attribute.put(ArmorItem.Type.LEGGINGS, 8);
-                attribute.put(ArmorItem.Type.CHESTPLATE, 10);
-                attribute.put(ArmorItem.Type.HELMET, 6);
-                attribute.put(ArmorItem.Type.BODY, 12);
-            }), 16, 2f, 0.1f, () -> ModItems.ZENALITE.get());
+    public static EnumMap<ArmorItem.Type, Integer> warlockArmorMap()
+    {
+        return makeArmorMap(6, 10, 8, 6);
+    }
 
-    private static Holder<ArmorMaterial> register(String name, EnumMap<ArmorItem.Type, Integer> typeProtection,
-                                                  int enchantability, float toughness, float knockbackResistance,
-                                                  Supplier<Item> ingredientItem) {
-        ResourceLocation location = ResourceLocation.fromNamespaceAndPath(HazenNStuff.MOD_ID, name);
-        Holder<SoundEvent> equipSound = SoundEvents.ARMOR_EQUIP_NETHERITE;
-        Supplier<Ingredient> ingredient = () -> Ingredient.of(ingredientItem.get());
-        List<ArmorMaterial.Layer> layers = List.of(new ArmorMaterial.Layer(location));
-
-        EnumMap<ArmorItem.Type, Integer> typeMap = new EnumMap<>(ArmorItem.Type.class);
-        for (ArmorItem.Type type : ArmorItem.Type.values()) {
-            typeMap.put(type, typeProtection.get(type));
-        }
-
-        return Registry.registerForHolder(BuiltInRegistries.ARMOR_MATERIAL, location,
-                new ArmorMaterial(typeProtection, enchantability, equipSound, ingredient, layers, toughness, knockbackResistance));
+    public static void register(IEventBus eventBus)
+    {
+        ARMOR_MATERIALS.register(eventBus);
     }
 }

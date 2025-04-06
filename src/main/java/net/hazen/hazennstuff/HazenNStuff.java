@@ -3,8 +3,11 @@ package net.hazen.hazennstuff;
 import net.hazen.hazennstuff.block.ModBlocks;
 import net.hazen.hazennstuff.effect.ModEffects;
 import net.hazen.hazennstuff.item.ModCreativeModeTabs;
+import net.hazen.hazennstuff.item.armor.ModArmorMaterials;
 import net.hazen.hazennstuff.registries.ModItems;
 import net.hazen.hazennstuff.sound.ModSounds;
+import net.minecraft.resources.ResourceLocation;
+import org.jetbrains.annotations.NotNull;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -67,6 +70,7 @@ public class HazenNStuff
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModArmorMaterials.register(modEventBus);
 
         ModEffects.register(modEventBus);
         ModSounds.register(modEventBus);
@@ -150,5 +154,10 @@ public class HazenNStuff
             LOGGER.info("HELLO FROM CLIENT SETUP");
             LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
         }
+    }
+
+    public static ResourceLocation id(@NotNull String path)
+    {
+        return ResourceLocation.fromNamespaceAndPath(HazenNStuff.MOD_ID, path);
     }
 }
