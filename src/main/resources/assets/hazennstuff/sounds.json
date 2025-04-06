@@ -1,0 +1,12 @@
+{
+  "soul_flame_equip": {
+    "subtitle": "sounds.hazennstuff.soul_flame_equip",
+    "sounds": [
+      "hazennstuff:soul_flame_equip_1",
+      "hazennstuff:soul_flame_equip_2",
+      "hazennstuff:soul_flame_equip_3",
+      "hazennstuff:soul_flame_equip_4",
+      "hazennstuff:soul_flame_equip_5"
+    ]
+  }
+}

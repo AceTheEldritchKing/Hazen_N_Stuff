@@ -2,10 +2,7 @@ package net.hazen.hazennstuff.registries;
 
 import io.redspace.ironsspellbooks.util.ItemPropertiesHelper;
 import net.hazen.hazennstuff.HazenNStuff;
-import net.hazen.hazennstuff.item.armor.ChargedScourgeArmorItem;
-import net.hazen.hazennstuff.item.armor.CreakingSorcererArmorItem;
-import net.hazen.hazennstuff.item.armor.LegionnaireArmorItem;
-import net.hazen.hazennstuff.item.armor.SeraphArmorItem;
+import net.hazen.hazennstuff.item.armor.*;
 import net.hazen.hazennstuff.item.curios.RadianceCurio;
 import net.hazen.hazennstuff.item.curios.RefinedCurio;
 import net.hazen.hazennstuff.item.curios.ReinforcedCurio;
@@ -75,6 +72,15 @@ public class ModItems {
     public static final DeferredHolder<Item, Item> CHARGED_SCOURGE_SCALE_MAIL = ITEMS.register("charged_scourge_scale_mail", () -> new ChargedScourgeArmorItem(ArmorItem.Type.CHESTPLATE, ItemPropertiesHelper.equipment(1).fireResistant().durability(ArmorItem.Type.CHESTPLATE.getDurability(19))));
     public static final DeferredHolder<Item, Item> CHARGED_SCOURGE_KNEEPADS = ITEMS.register("charged_scourge_kneepads", () -> new ChargedScourgeArmorItem(ArmorItem.Type.LEGGINGS, ItemPropertiesHelper.equipment(1).fireResistant().durability(ArmorItem.Type.LEGGINGS.getDurability(19))));
     public static final DeferredHolder<Item, Item> CHARGED_SCOURGE_TREADS = ITEMS.register("charged_scourge_treads", () -> new ChargedScourgeArmorItem(ArmorItem.Type.BOOTS, ItemPropertiesHelper.equipment(1).fireResistant().durability(ArmorItem.Type.BOOTS.getDurability(19))));
+
+
+    //Soul Flame Armor
+
+    public static final DeferredHolder<Item, Item> SOUL_FLAME_MASK = ITEMS.register("soul_flame_mask", () -> new SoulFlameArmorItem(ArmorItem.Type.HELMET, ItemPropertiesHelper.equipment(1).fireResistant().durability(ArmorItem.Type.HELMET.getDurability(19))));
+    public static final DeferredHolder<Item, Item> SOUL_FLAME_CHESTPLATE = ITEMS.register("soul_flame_chestplate", () -> new SoulFlameArmorItem(ArmorItem.Type.CHESTPLATE, ItemPropertiesHelper.equipment(1).fireResistant().durability(ArmorItem.Type.CHESTPLATE.getDurability(19))));
+    public static final DeferredHolder<Item, Item> SOUL_FLAME_LEGGINGS = ITEMS.register("soul_flame_leggings", () -> new SoulFlameArmorItem(ArmorItem.Type.LEGGINGS, ItemPropertiesHelper.equipment(1).fireResistant().durability(ArmorItem.Type.LEGGINGS.getDurability(19))));
+    public static final DeferredHolder<Item, Item> SOUL_FLAME_TRACERS = ITEMS.register("soul_flame_tracers", () -> new SoulFlameArmorItem(ArmorItem.Type.BOOTS, ItemPropertiesHelper.equipment(1).fireResistant().durability(ArmorItem.Type.BOOTS.getDurability(19))));
+
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

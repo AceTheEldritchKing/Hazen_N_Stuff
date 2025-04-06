@@ -67,6 +67,11 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.CHARGED_SCOURGE_SCALE_MAIL.get());
                         output.accept(ModItems.CHARGED_SCOURGE_KNEEPADS.get());
                         output.accept(ModItems.CHARGED_SCOURGE_TREADS.get());
+                        // Soul Flamed
+                        output.accept(ModItems.SOUL_FLAME_MASK.get());
+                        output.accept(ModItems.SOUL_FLAME_CHESTPLATE.get());
+                        output.accept(ModItems.SOUL_FLAME_LEGGINGS.get());
+                        output.accept(ModItems.SOUL_FLAME_TRACERS.get());
 
 
                         //Curios

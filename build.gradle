@@ -42,15 +42,7 @@ repositories {
     maven { url = "https://cursemaven.com" }
     maven { url = "https://maven.blamejared.com" }
     maven { url = "https://maven.kosmx.dev/" }
-
-    maven {
-        // Shadows (Attribute Lib)
-        url "https://maven.shadowsoffire.dev/releases"
-        content {
-            includeGroup "dev.shadowsoffire"
-        }
     }
-}
 
 
 base {
@@ -153,7 +145,6 @@ dependencies {
 
     //todo: 1.21: find correct maven for new curios
     implementation "curse.maven:curios-309927:6342656"
-
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.

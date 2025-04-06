@@ -44,6 +44,11 @@
   "item.hazennstuff.charged_scourge_kneepads": "Scourge Kneepads",
   "item.hazennstuff.charged_scourge_treads": "Scourge Treads",
 
+  "item.hazennstuff.soul_flame_mask": "Soul Flame Mask",
+  "item.hazennstuff.soul_flame_chestplate": "Soul Flame Chestplate",
+  "item.hazennstuff.soul_flame_leggings": "Soul Flame Leggings",
+  "item.hazennstuff.soul_flame_tracers": "Soul Flame Tracers",
+
 
 
   "curios.modifiers.mana_crystal": "When using the Mana Crystal:",
@@ -58,6 +63,9 @@
   "effect.hazennstuff.scourges_gorge": "Scourge's Gorge",
   "effect.hazennstuff.call_of_the_garden": "Call of the Garden",
   "effect.hazennstuff.seraphs_might": "Seraph's Might",
+
+
+  "sounds.hazennstuff.soul_flame_equip": "Soul Flame Armor Equipped",
 
 
 

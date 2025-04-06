@@ -4,6 +4,7 @@ import net.hazen.hazennstuff.block.ModBlocks;
 import net.hazen.hazennstuff.effect.ModEffects;
 import net.hazen.hazennstuff.item.ModCreativeModeTabs;
 import net.hazen.hazennstuff.registries.ModItems;
+import net.hazen.hazennstuff.sound.ModSounds;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -68,6 +69,7 @@ public class HazenNStuff
         ModBlocks.register(modEventBus);
 
         ModEffects.register(modEventBus);
+        ModSounds.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
