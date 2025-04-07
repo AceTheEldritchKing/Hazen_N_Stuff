@@ -7,14 +7,14 @@
   ],
   "key": {
     "#": {
-      "item": "hazennstuff:zenalite"
+      "item": "minecraft:stone_bricks"
     },
     "S": {
-      "item": "minecraft:stone_bricks"
+      "item": "hazennstuff:raw_zenalite"
     }
   },
   "result": {
     "id": "hazennstuff:zenalite_bricks",
-    "count": 1
+    "count": 16
   }
 }

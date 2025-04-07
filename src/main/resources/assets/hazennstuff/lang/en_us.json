@@ -49,6 +49,10 @@
   "item.hazennstuff.soul_flame_leggings": "Soul Flame Leggings",
   "item.hazennstuff.soul_flame_tracers": "Soul Flame Tracers",
 
+  "item.hazennstuff.supreme_witch_hat": "Supreme Witch Hat",
+  "item.hazennstuff.supreme_witch_robes": "Supreme Witch Robes",
+  "item.hazennstuff.supreme_witch_leggings": "Supreme Witch Leggings",
+  "item.hazennstuff.supreme_witch_boots": "Supreme Witch Boots",
 
 
   "curios.modifiers.mana_crystal": "When using the Mana Crystal:",
@@ -63,9 +67,15 @@
   "effect.hazennstuff.scourges_gorge": "Scourge's Gorge",
   "effect.hazennstuff.call_of_the_garden": "Call of the Garden",
   "effect.hazennstuff.seraphs_might": "Seraph's Might",
+  "effect.hazennstuff.sadistic_nature": "Sadistic Nature",
+  "effect.hazennstuff.burning_point": "Burning Point",
 
 
   "sounds.hazennstuff.soul_flame_equip": "Soul Flame Armor Equipped",
+  "sounds.hazennstuff.charged_scourge_equip": "Charged Scourge Armor Equipped",
+  "sounds.hazennstuff.creaking_sorcerer_equip": "Creaking Sorcerer Armor Equipped",
+  "sounds.hazennstuff.seraph_equip": "Seraph Armor Equipped",
+  "sounds.hazennstuff.supreme_witch_equip": "Supreme Witch Armor Equipped",
 
 
 

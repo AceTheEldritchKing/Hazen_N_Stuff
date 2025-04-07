@@ -34,37 +34,49 @@ public class ModEffects {
     public static final Holder<MobEffect> CALL_OF_THE_GARDEN_EFFECT = MOB_EFFECTS.register("call_of_the_garden",
             () -> new TyrantsGraceEffect(MobEffectCategory.BENEFICIAL, 0xfbb741)
                     .addAttributeModifier(AttributeRegistry.CASTING_MOVESPEED,
-                            ResourceLocation.fromNamespaceAndPath(HazenNStuff.MOD_ID, "call_of_the_garden"), 0.2f,
+                            ResourceLocation.fromNamespaceAndPath(HazenNStuff.MOD_ID, "call_of_the_garden"), 0.15f,
                             AttributeModifier.Operation.ADD_MULTIPLIED_BASE)
                     .addAttributeModifier(AttributeRegistry.SPELL_RESIST,
-                            ResourceLocation.fromNamespaceAndPath(HazenNStuff.MOD_ID, "call_of_the_garden"), 0.2f,
+                            ResourceLocation.fromNamespaceAndPath(HazenNStuff.MOD_ID, "call_of_the_garden"), 0.1f,
                             AttributeModifier.Operation.ADD_MULTIPLIED_BASE));
 
     public static final Holder<MobEffect> SERAPHS_MIGHT_EFFECT = MOB_EFFECTS.register("seraphs_might",
             () -> new TyrantsGraceEffect(MobEffectCategory.BENEFICIAL, 0xfbb741)
                     .addAttributeModifier(AttributeRegistry.CASTING_MOVESPEED,
-                            ResourceLocation.fromNamespaceAndPath(HazenNStuff.MOD_ID, "seraphs_might"), 0.2f,
+                            ResourceLocation.fromNamespaceAndPath(HazenNStuff.MOD_ID, "seraphs_might"), 0.15f,
                             AttributeModifier.Operation.ADD_MULTIPLIED_BASE)
                     .addAttributeModifier(AttributeRegistry.SPELL_RESIST,
-                            ResourceLocation.fromNamespaceAndPath(HazenNStuff.MOD_ID, "seraphs_might"), 0.2f,
-                            AttributeModifier.Operation.ADD_MULTIPLIED_BASE));
+                            ResourceLocation.fromNamespaceAndPath(HazenNStuff.MOD_ID, "seraphs_might"), 0.1f,
+                            AttributeModifier.Operation.ADD_MULTIPLIED_BASE)
+                    .addAttributeModifier(Attributes.SAFE_FALL_DISTANCE,
+                            ResourceLocation.fromNamespaceAndPath(HazenNStuff.MOD_ID, "seraphs_might"), 255f,
+                            AttributeModifier.Operation.ADD_VALUE));
 
     public static final Holder<MobEffect> SCOURGES_GORGE_EFFECT = MOB_EFFECTS.register("scourges_gorge",
             () -> new TyrantsGraceEffect(MobEffectCategory.BENEFICIAL, 0xfbb741)
                     .addAttributeModifier(AttributeRegistry.CASTING_MOVESPEED,
-                            ResourceLocation.fromNamespaceAndPath(HazenNStuff.MOD_ID, "scourges_gorge"), 0.2f,
+                            ResourceLocation.fromNamespaceAndPath(HazenNStuff.MOD_ID, "scourges_gorge"), 0.15f,
                             AttributeModifier.Operation.ADD_MULTIPLIED_BASE)
                     .addAttributeModifier(AttributeRegistry.SPELL_RESIST,
-                            ResourceLocation.fromNamespaceAndPath(HazenNStuff.MOD_ID, "scourges_gorge"), 0.2f,
+                            ResourceLocation.fromNamespaceAndPath(HazenNStuff.MOD_ID, "scourges_gorge"), 0.1f,
                             AttributeModifier.Operation.ADD_MULTIPLIED_BASE));
 
     public static final Holder<MobEffect> BURNING_POINT_EFFECT = MOB_EFFECTS.register("burning_point",
             () -> new TyrantsGraceEffect(MobEffectCategory.BENEFICIAL, 0xfbb741)
                     .addAttributeModifier(AttributeRegistry.CASTING_MOVESPEED,
-                            ResourceLocation.fromNamespaceAndPath(HazenNStuff.MOD_ID, "burning_point"), 0.2f,
+                            ResourceLocation.fromNamespaceAndPath(HazenNStuff.MOD_ID, "burning_point"), 0.15f,
                             AttributeModifier.Operation.ADD_MULTIPLIED_BASE)
                     .addAttributeModifier(AttributeRegistry.SPELL_RESIST,
-                            ResourceLocation.fromNamespaceAndPath(HazenNStuff.MOD_ID, "burning_point"), 0.2f,
+                            ResourceLocation.fromNamespaceAndPath(HazenNStuff.MOD_ID, "burning_point"), 0.1f,
+                            AttributeModifier.Operation.ADD_MULTIPLIED_BASE));
+
+    public static final Holder<MobEffect> SADISTIC_NATURE_EFFECT = MOB_EFFECTS.register("sadistic_nature",
+            () -> new TyrantsGraceEffect(MobEffectCategory.BENEFICIAL, 0xfbb741)
+                    .addAttributeModifier(AttributeRegistry.CASTING_MOVESPEED,
+                            ResourceLocation.fromNamespaceAndPath(HazenNStuff.MOD_ID, "sadistic_nature"), 0.15f,
+                            AttributeModifier.Operation.ADD_MULTIPLIED_BASE)
+                    .addAttributeModifier(AttributeRegistry.SPELL_RESIST,
+                            ResourceLocation.fromNamespaceAndPath(HazenNStuff.MOD_ID, "sadistic_nature"), 0.1f,
                             AttributeModifier.Operation.ADD_MULTIPLIED_BASE));
 
     public static void register(IEventBus eventBus) {

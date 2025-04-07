@@ -8,5 +8,37 @@
       "hazennstuff:soul_flame_equip_4",
       "hazennstuff:soul_flame_equip_5"
     ]
+  },
+  "supreme_witch_equip": {
+    "sounds": [
+      "hazennstuff:supreme_witch_equip_1",
+      "hazennstuff:supreme_witch_equip_2",
+      "hazennstuff:supreme_witch_equip_3",
+      "hazennstuff:supreme_witch_equip_4"
+    ]
+  },
+  "seraph_equip": {
+    "sounds": [
+      "hazennstuff:seraph_equip_1",
+      "hazennstuff:seraph_equip_2",
+      "hazennstuff:seraph_equip_3",
+      "hazennstuff:seraph_equip_4"
+    ]
+  },
+  "creaking_sorcerer_equip": {
+    "sounds": [
+      "hazennstuff:creaking_sorcerer_equip_1",
+      "hazennstuff:creaking_sorcerer_equip_2",
+      "hazennstuff:creaking_sorcerer_equip_3",
+      "hazennstuff:creaking_sorcerer_equip_4"
+    ]
+  },
+  "charged_scourge_equip": {
+    "sounds": [
+      "hazennstuff:charged_scourge_equip_1",
+      "hazennstuff:charged_scourge_equip_2",
+      "hazennstuff:charged_scourge_equip_3",
+      "hazennstuff:charged_scourge_equip_4"
+    ]
   }
 }

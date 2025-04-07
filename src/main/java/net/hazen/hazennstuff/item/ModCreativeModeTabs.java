@@ -72,6 +72,11 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.SOUL_FLAME_CHESTPLATE.get());
                         output.accept(ModItems.SOUL_FLAME_LEGGINGS.get());
                         output.accept(ModItems.SOUL_FLAME_TRACERS.get());
+                        // Supreme Witch
+                        output.accept(ModItems.SUPREME_WITCH_HAT.get());
+                        output.accept(ModItems.SUPREME_WITCH_ROBES.get());
+                        output.accept(ModItems.SUPREME_WITCH_LEGGINGS.get());
+                        output.accept(ModItems.SUPREME_WITCH_BOOTS.get());
 
 
                         //Curios

@@ -12,6 +12,7 @@ import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.neoforged.bus.api.IEventBus;
+import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
@@ -25,7 +26,7 @@ public class ModArmorMaterials {
     public static DeferredHolder<ArmorMaterial, ArmorMaterial> CREAKING_SORCERER_MATERIAL = register("creaking",
             warlockArmorMap(),
             16,
-            SoundEvents.ARMOR_EQUIP_LEATHER,
+            ModSounds.CREAKING_SORCERER_EQUIP,
             () -> Ingredient.of(ModItems.ZENALITE.get()),
             2,
             0.1F);
@@ -33,7 +34,7 @@ public class ModArmorMaterials {
     public static DeferredHolder<ArmorMaterial, ArmorMaterial> SERAPH_MATERIAL = register("seraph",
             warlockArmorMap(),
             16,
-            SoundEvents.ARMOR_EQUIP_LEATHER,
+            ModSounds.SERAPH_EQUIP,
             () -> Ingredient.of(ModItems.ZENALITE.get()),
             2,
             0.1F);
@@ -41,7 +42,7 @@ public class ModArmorMaterials {
     public static DeferredHolder<ArmorMaterial, ArmorMaterial> LEGIONNAIRE_MATERIAL = register("legionnaire",
             warlockArmorMap(),
             16,
-            SoundEvents.ARMOR_EQUIP_LEATHER,
+            SoundEvents.ARMOR_EQUIP_NETHERITE,
             () -> Ingredient.of(ModItems.ZENALITE.get()),
             2,
             0.1F);
@@ -49,7 +50,7 @@ public class ModArmorMaterials {
     public static DeferredHolder<ArmorMaterial, ArmorMaterial> CHARGED_SCOURGE_MATERIAL = register("scourge",
             warlockArmorMap(),
             16,
-            SoundEvents.ARMOR_EQUIP_LEATHER,
+            ModSounds.CHARGED_SCOURGE_EQUIP,
             () -> Ingredient.of(ModItems.ZENALITE.get()),
             2,
             0.1F);
@@ -58,6 +59,14 @@ public class ModArmorMaterials {
             warlockArmorMap(),
             16,
             ModSounds.SOUL_FLAME_EQUIP,
+            () -> Ingredient.of(ModItems.ZENALITE.get()),
+            2,
+            0.1F);
+
+    public static DeferredHolder<ArmorMaterial, ArmorMaterial> SUPREME_WITCH_MATERIAL = register("supreme_witch",
+            warlockArmorMap(),
+            16,
+            ModSounds.SUPREME_WITCH_EQUIP,
             () -> Ingredient.of(ModItems.ZENALITE.get()),
             2,
             0.1F);

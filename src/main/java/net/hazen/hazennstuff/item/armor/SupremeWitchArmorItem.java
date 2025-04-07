@@ -4,8 +4,7 @@ import io.redspace.ironsspellbooks.api.registry.AttributeRegistry;
 import io.redspace.ironsspellbooks.entity.armor.GenericCustomArmorRenderer;
 import io.redspace.ironsspellbooks.item.weapons.AttributeContainer;
 import net.hazen.hazennstuff.effect.ModEffects;
-import net.hazen.hazennstuff.entity.armor.ChargedScourgeArmorModel;
-import net.hazen.hazennstuff.entity.armor.SoulFlameArmorModel;
+import net.hazen.hazennstuff.entity.armor.SupremeWitchArmorModel;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.Entity;
@@ -18,12 +17,12 @@ import net.neoforged.api.distmarker.Dist;
 import net.neoforged.api.distmarker.OnlyIn;
 import software.bernie.geckolib.renderer.GeoArmorRenderer;
 
-public class SoulFlameArmorItem extends ImbuableModArmorItem {
-    public SoulFlameArmorItem(Type type, Properties settings) {
+public class SupremeWitchArmorItem extends ImbuableModArmorItem {
+    public SupremeWitchArmorItem(Type type, Properties settings) {
         // Add in your armor tier + additional attributes for your item
-        super(ModArmorMaterials.SOUL_FLAME_MATERIAL, type, settings,
+        super(ModArmorMaterials.SUPREME_WITCH_MATERIAL, type, settings,
                 new AttributeContainer(AttributeRegistry.MAX_MANA, 150.0, AttributeModifier.Operation.ADD_VALUE),
-                new AttributeContainer(AttributeRegistry.FIRE_SPELL_POWER, .15, AttributeModifier.Operation.ADD_VALUE),
+                new AttributeContainer(AttributeRegistry.EVOCATION_SPELL_POWER, .15, AttributeModifier.Operation.ADD_VALUE),
                 new AttributeContainer(AttributeRegistry.ELDRITCH_SPELL_POWER, .05, AttributeModifier.Operation.ADD_VALUE),
                 new AttributeContainer(AttributeRegistry.SPELL_POWER, .5, AttributeModifier.Operation.ADD_VALUE)
         );
@@ -34,7 +33,7 @@ public class SoulFlameArmorItem extends ImbuableModArmorItem {
     @Override
     @OnlyIn(Dist.CLIENT)
     public GeoArmorRenderer<?> supplyRenderer() {
-        return new GenericCustomArmorRenderer<>(new SoulFlameArmorModel());
+        return new GenericCustomArmorRenderer<>(new SupremeWitchArmorModel());
     }
 
     @Override
@@ -45,18 +44,15 @@ public class SoulFlameArmorItem extends ImbuableModArmorItem {
     }
 
     private void evaluateArmorEffects(Player player) {
-        if (!player.hasEffect(ModEffects.BURNING_POINT_EFFECT)) {
-            player.addEffect(new MobEffectInstance(ModEffects.BURNING_POINT_EFFECT, 200, 0, false, false, true));
-        }
-        if (!player.hasEffect(MobEffects.FIRE_RESISTANCE)) {
-            player.addEffect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 200, 0, false, false, true));
+        if (!player.hasEffect(ModEffects.SADISTIC_NATURE_EFFECT)) {
+            player.addEffect(new MobEffectInstance(ModEffects.SADISTIC_NATURE_EFFECT, 200, 0, false, false, true));
         }
     }
 
     private boolean isWearingFullSet(Player player) {
-        return player.getItemBySlot(ArmorItem.Type.HELMET.getSlot()).getItem() instanceof SoulFlameArmorItem &&
-                player.getItemBySlot(ArmorItem.Type.CHESTPLATE.getSlot()).getItem() instanceof SoulFlameArmorItem &&
-                player.getItemBySlot(ArmorItem.Type.LEGGINGS.getSlot()).getItem() instanceof SoulFlameArmorItem &&
-                player.getItemBySlot(ArmorItem.Type.BOOTS.getSlot()).getItem() instanceof SoulFlameArmorItem;
+        return player.getItemBySlot(ArmorItem.Type.HELMET.getSlot()).getItem() instanceof SupremeWitchArmorItem &&
+                player.getItemBySlot(ArmorItem.Type.CHESTPLATE.getSlot()).getItem() instanceof SupremeWitchArmorItem &&
+                player.getItemBySlot(ArmorItem.Type.LEGGINGS.getSlot()).getItem() instanceof SupremeWitchArmorItem &&
+                player.getItemBySlot(ArmorItem.Type.BOOTS.getSlot()).getItem() instanceof SupremeWitchArmorItem;
     }
 }
