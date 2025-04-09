@@ -25,7 +25,6 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.ZENALITE);
                         output.accept(ModItems.RAWZENALITE);
                         output.accept(ModItems.STARKISSEDZENALITE);
-                        output.accept(ModItems.OMINOUSALLOY);
                         output.accept(ModItems.DIVINE_MOLD);
                     }).build());
 

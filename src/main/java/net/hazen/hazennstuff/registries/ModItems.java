@@ -1,5 +1,9 @@
 package net.hazen.hazennstuff.registries;
 
+import io.redspace.ironsspellbooks.api.item.weapons.ExtendedSwordItem;
+import io.redspace.ironsspellbooks.api.item.weapons.MagicSwordItem;
+import io.redspace.ironsspellbooks.api.registry.SpellDataRegistryHolder;
+import io.redspace.ironsspellbooks.api.registry.SpellRegistry;
 import io.redspace.ironsspellbooks.util.ItemPropertiesHelper;
 import net.hazen.hazennstuff.HazenNStuff;
 import net.hazen.hazennstuff.item.armor.*;
@@ -7,8 +11,10 @@ import net.hazen.hazennstuff.item.curios.RadianceCurio;
 import net.hazen.hazennstuff.item.curios.RefinedCurio;
 import net.hazen.hazennstuff.item.curios.ReinforcedCurio;
 import net.hazen.hazennstuff.item.curios.RupturedCurio;
+import net.hazen.hazennstuff.item.weapons.HNSExtendedWeaponTiers;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Rarity;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -26,15 +32,17 @@ public class ModItems {
     public static final DeferredItem<Item> ZENALITE = ITEMS.register("zenalite",
             () -> new Item(new Item.Properties()));
 
-    public static final DeferredItem<Item> OMINOUSALLOY = ITEMS.register("ominous_alloy",
-            () -> new Item(new Item.Properties()));
-
     public static final DeferredItem<Item> RAWZENALITE = ITEMS.register("raw_zenalite",
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> STARKISSEDZENALITE = ITEMS.register("starkissed_zenalite",
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> DIVINE_MOLD = ITEMS.register("divine_mold",
             () -> new Item(new Item.Properties()));
+
+    //Weapons
+    public static final DeferredHolder<Item, Item> ICE_PIKE = ITEMS.register("ice_pike", () ->
+            new MagicSwordItem(HNSExtendedWeaponTiers.ICE_PIKE, ItemPropertiesHelper.equipment().rarity(Rarity.RARE).attributes(ExtendedSwordItem.createAttributes(HNSExtendedWeaponTiers.ICE_PIKE)),
+                    SpellDataRegistryHolder.of(new SpellDataRegistryHolder(SpellRegistry.ICE_SPIKES_SPELL, 10))));
 
 
     //Curios

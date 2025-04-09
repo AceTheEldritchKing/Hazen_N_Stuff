@@ -11,6 +11,7 @@ import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
+import dev.shadowsoffire.apothic_attributes.api.ALObjects;
 
 public class ModEffects {
     public static final DeferredRegister<MobEffect> MOB_EFFECTS =
@@ -68,7 +69,10 @@ public class ModEffects {
                             AttributeModifier.Operation.ADD_MULTIPLIED_BASE)
                     .addAttributeModifier(AttributeRegistry.SPELL_RESIST,
                             ResourceLocation.fromNamespaceAndPath(HazenNStuff.MOD_ID, "burning_point"), 0.1f,
-                            AttributeModifier.Operation.ADD_MULTIPLIED_BASE));
+                            AttributeModifier.Operation.ADD_MULTIPLIED_BASE)
+                    .addAttributeModifier(ALObjects.Attributes.FIRE_DAMAGE,
+                            ResourceLocation.fromNamespaceAndPath(HazenNStuff.MOD_ID, "burning_point"),1.0f,
+                            AttributeModifier.Operation.ADD_VALUE));
 
     public static final Holder<MobEffect> SADISTIC_NATURE_EFFECT = MOB_EFFECTS.register("sadistic_nature",
             () -> new TyrantsGraceEffect(MobEffectCategory.BENEFICIAL, 0xfbb741)

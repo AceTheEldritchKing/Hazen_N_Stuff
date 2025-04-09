@@ -102,8 +102,6 @@ public class HazenNStuff
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS)
             event.accept(ModItems.ZENALITE);
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS)
-            event.accept(ModItems.OMINOUSALLOY);
-        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS)
             event.accept(ModItems.RAWZENALITE);
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS)
             event.accept(ModItems.STARKISSEDZENALITE);
