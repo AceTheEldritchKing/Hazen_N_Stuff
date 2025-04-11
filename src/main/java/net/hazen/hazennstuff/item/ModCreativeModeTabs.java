@@ -42,38 +42,38 @@ public class ModCreativeModeTabs {
                     }).build());
 
     public static final Supplier<CreativeModeTab> HAZEN_N_STUFF_EQUIPMENT = CREATIVE_MODE_TAB.register("hazennstuff_equipment",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.CREAKING_MASK.get()))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.RADIANCE.get()))
                     .withTabsBefore(ResourceLocation.fromNamespaceAndPath(HazenNStuff.MOD_ID, "hazennstuff_materials"))
                     .title(Component.translatable("creativetab.hazennstuff.hazennstuff_equipment"))
                     .displayItems((itemDisplayParameters, output) -> {
                         // Creaking
-                        output.accept(ModItems.CREAKING_MASK.get());
+                        output.accept(ModItems.CREAKING_HELMET.get());
                         output.accept(ModItems.CREAKING_CHESTPLATE.get());
                         output.accept(ModItems.CREAKING_LEGGINGS.get());
                         output.accept(ModItems.CREAKING_BOOTS.get());
                         // Legionnaire
-                        output.accept(ModItems.LEGIONNAIRE_CROWN.get());
-                        output.accept(ModItems.LEGIONNAIRE_BREASTPLATE.get());
+                        output.accept(ModItems.LEGIONNAIRE_HELMET.get());
+                        output.accept(ModItems.LEGIONNAIRE_CHESTPLATE.get());
                         output.accept(ModItems.LEGIONNAIRE_LEGGINGS.get());
                         output.accept(ModItems.LEGIONNAIRE_BOOTS.get());
                         // Seraph
-                        output.accept(ModItems.SERAPH_VISOR.get());
-                        output.accept(ModItems.SERAPH_BREASTPLATE.get());
+                        output.accept(ModItems.SERAPH_HELMET.get());
+                        output.accept(ModItems.SERAPH_CHESTPLATE.get());
                         output.accept(ModItems.SERAPH_LEGGINGS.get());
-                        output.accept(ModItems.SERAPH_TRACERS.get());
+                        output.accept(ModItems.SERAPH_BOOTS.get());
                         // Scourge
-                        output.accept(ModItems.CHARGED_SCOURGE_MASK.get());
-                        output.accept(ModItems.CHARGED_SCOURGE_SCALE_MAIL.get());
-                        output.accept(ModItems.CHARGED_SCOURGE_KNEEPADS.get());
-                        output.accept(ModItems.CHARGED_SCOURGE_TREADS.get());
+                        output.accept(ModItems.CHARGED_SCOURGE_HELMET.get());
+                        output.accept(ModItems.CHARGED_SCOURGE_CHESTPLATE.get());
+                        output.accept(ModItems.CHARGED_SCOURGE_LEGGINGS.get());
+                        output.accept(ModItems.CHARGED_SCOURGE_BOOTS.get());
                         // Soul Flamed
-                        output.accept(ModItems.SOUL_FLAME_MASK.get());
+                        output.accept(ModItems.SOUL_FLAME_HELMET.get());
                         output.accept(ModItems.SOUL_FLAME_CHESTPLATE.get());
                         output.accept(ModItems.SOUL_FLAME_LEGGINGS.get());
-                        output.accept(ModItems.SOUL_FLAME_TRACERS.get());
+                        output.accept(ModItems.SOUL_FLAME_BOOTS.get());
                         // Supreme Witch
-                        output.accept(ModItems.SUPREME_WITCH_HAT.get());
-                        output.accept(ModItems.SUPREME_WITCH_ROBES.get());
+                        output.accept(ModItems.SUPREME_WITCH_HELMET.get());
+                        output.accept(ModItems.SUPREME_WITCH_CHESTPLATE.get());
                         output.accept(ModItems.SUPREME_WITCH_LEGGINGS.get());
                         output.accept(ModItems.SUPREME_WITCH_BOOTS.get());
 

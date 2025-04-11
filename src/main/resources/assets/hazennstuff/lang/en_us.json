@@ -22,39 +22,44 @@
   "block.hazennstuff.zenalite_stone_ore": "Zenalite Stone Ore",
 
 
+  "item.hazennstuff.ice_pike": "Ice Pike",
 
 
 
-
-  "item.hazennstuff.creaking_mask": "Creaking Mask",
+  "item.hazennstuff.creaking_helmet": "Creaking Mask",
   "item.hazennstuff.creaking_chestplate": "Creaking Chestplate",
   "item.hazennstuff.creaking_leggings": "Creaking Leggings",
   "item.hazennstuff.creaking_boots": "Creaking Boots",
 
-  "item.hazennstuff.seraph_visor": "Seraph Visor",
-  "item.hazennstuff.seraph_breastplate": "Seraph Breastplate",
+  "item.hazennstuff.seraph_helmet": "Seraph Visor",
+  "item.hazennstuff.seraph_chestplate": "Seraph Breastplate",
   "item.hazennstuff.seraph_leggings": "Seraph Leggings",
-  "item.hazennstuff.seraph_tracers": "Seraph Tracers",
+  "item.hazennstuff.seraph_boots": "Seraph Tracers",
 
-  "item.hazennstuff.legionnaire_crown": "Legionnaire Crown",
-  "item.hazennstuff.legionnaire_breastplate": "Legionnaire Breastplate",
+  "item.hazennstuff.legionnaire_helmet": "Legionnaire Crown",
+  "item.hazennstuff.legionnaire_chestplate": "Legionnaire Breastplate",
   "item.hazennstuff.legionnaire_leggings": "Legionnaire Leggings",
   "item.hazennstuff.legionnaire_boots": "legionnaire Boots",
 
-  "item.hazennstuff.charged_scourge_mask": "Scourge Mask",
-  "item.hazennstuff.charged_scourge_scale_mail": "Scourge Scale Mail",
-  "item.hazennstuff.charged_scourge_kneepads": "Scourge Kneepads",
-  "item.hazennstuff.charged_scourge_treads": "Scourge Treads",
+  "item.hazennstuff.charged_scourge_helmet": "Scourge Mask",
+  "item.hazennstuff.charged_scourge_chestplate": "Scourge Scale Mail",
+  "item.hazennstuff.charged_scourge_leggings": "Scourge Kneepads",
+  "item.hazennstuff.charged_scourge_boots": "Scourge Treads",
 
-  "item.hazennstuff.soul_flame_mask": "Soul Flame Mask",
+  "item.hazennstuff.soul_flame_helmet": "Soul Flame Mask",
   "item.hazennstuff.soul_flame_chestplate": "Soul Flame Chestplate",
   "item.hazennstuff.soul_flame_leggings": "Soul Flame Leggings",
-  "item.hazennstuff.soul_flame_tracers": "Soul Flame Tracers",
+  "item.hazennstuff.soul_flame_boots": "Soul Flame Tracers",
 
-  "item.hazennstuff.supreme_witch_hat": "Supreme Witch Hat",
-  "item.hazennstuff.supreme_witch_robes": "Supreme Witch Robes",
+  "item.hazennstuff.supreme_witch_helmet": "Supreme Witch Hat",
+  "item.hazennstuff.supreme_witch_chestplate": "Supreme Witch Robes",
   "item.hazennstuff.supreme_witch_leggings": "Supreme Witch Leggings",
   "item.hazennstuff.supreme_witch_boots": "Supreme Witch Boots",
+
+  "item.hazennstuff.cryogenic_ruler_helmet": "Cryogenic Ruler's Crown",
+  "item.hazennstuff.cryogenic_ruler_chestplate": "Cryogenic Ruler's Chestplate",
+  "item.hazennstuff.cryogenic_ruler_leggings": "Cryogenic Ruler's Leggings",
+  "item.hazennstuff.cryogenic_ruler_boots": "Cryogenic Ruler's Boots",
 
 
   "curios.modifiers.mana_crystal": "When using the Mana Crystal:",

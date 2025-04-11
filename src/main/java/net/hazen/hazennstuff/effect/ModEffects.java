@@ -83,6 +83,18 @@ public class ModEffects {
                             ResourceLocation.fromNamespaceAndPath(HazenNStuff.MOD_ID, "sadistic_nature"), 0.1f,
                             AttributeModifier.Operation.ADD_MULTIPLIED_BASE));
 
+    public static final Holder<MobEffect> SUB_ZERO_EFFECT = MOB_EFFECTS.register("sub_zero",
+            () -> new TyrantsGraceEffect(MobEffectCategory.BENEFICIAL, 0xfbb741)
+                    .addAttributeModifier(AttributeRegistry.CASTING_MOVESPEED,
+                            ResourceLocation.fromNamespaceAndPath(HazenNStuff.MOD_ID, "sub_zero"), 0.15f,
+                            AttributeModifier.Operation.ADD_MULTIPLIED_BASE)
+                    .addAttributeModifier(AttributeRegistry.SPELL_RESIST,
+                            ResourceLocation.fromNamespaceAndPath(HazenNStuff.MOD_ID, "sub_zero"), 0.1f,
+                            AttributeModifier.Operation.ADD_MULTIPLIED_BASE)
+                    .addAttributeModifier(ALObjects.Attributes.COLD_DAMAGE,
+                            ResourceLocation.fromNamespaceAndPath(HazenNStuff.MOD_ID, "sub_zero"), 0.1f,
+                            AttributeModifier.Operation.ADD_MULTIPLIED_BASE));
+
     public static void register(IEventBus eventBus) {
         MOB_EFFECTS.register(eventBus);
     }

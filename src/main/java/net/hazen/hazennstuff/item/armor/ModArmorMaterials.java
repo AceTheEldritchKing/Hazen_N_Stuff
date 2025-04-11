@@ -71,6 +71,14 @@ public class ModArmorMaterials {
             2,
             0.1F);
 
+    public static DeferredHolder<ArmorMaterial, ArmorMaterial> CRYOGENIC_RULER_MATERIAL = register("cryogenic_ruler",
+            warlockArmorMap(),
+            16,
+            ModSounds.CREAKING_SORCERER_EQUIP,
+            () -> Ingredient.of(ModItems.ZENALITE.get()),
+            2,
+            0.1F);
+
     private static DeferredHolder<ArmorMaterial, ArmorMaterial> register(
             String name,
             EnumMap<ArmorItem.Type, Integer> defense,

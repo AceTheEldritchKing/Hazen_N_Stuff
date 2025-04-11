@@ -146,12 +146,8 @@ configurations {
 
 dependencies {
     implementation "curse.maven:iss-855414:6359979"
-
     implementation "curse.maven:geckolib-388172:6304958"
-
     implementation "curse.maven:player_animator-658587:6024462"
-
-    //todo: 1.21: find correct maven for new curios
     implementation "curse.maven:curios-309927:6342656"
 
     implementation "curse.maven:apothic-attributes-898963:6302334"
