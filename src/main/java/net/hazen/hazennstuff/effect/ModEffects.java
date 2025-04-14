@@ -1,12 +1,14 @@
 package net.hazen.hazennstuff.effect;
 
 import io.redspace.ironsspellbooks.api.registry.AttributeRegistry;
+import io.redspace.ironsspellbooks.damage.ISSDamageTypes;
 import net.hazen.hazennstuff.HazenNStuff;
 import net.minecraft.core.Holder;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectCategory;
+import net.minecraft.world.entity.ai.attributes.Attribute;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.neoforged.bus.api.IEventBus;
@@ -94,6 +96,30 @@ public class ModEffects {
                     .addAttributeModifier(ALObjects.Attributes.COLD_DAMAGE,
                             ResourceLocation.fromNamespaceAndPath(HazenNStuff.MOD_ID, "sub_zero"), 0.1f,
                             AttributeModifier.Operation.ADD_MULTIPLIED_BASE));
+
+    public static final Holder<MobEffect> BUTCHERS_VANITY_EFFECT = MOB_EFFECTS.register("butchers_vanity",
+            () -> new TyrantsGraceEffect(MobEffectCategory.BENEFICIAL, 0xfbb741)
+                    .addAttributeModifier(AttributeRegistry.CASTING_MOVESPEED,
+                            ResourceLocation.fromNamespaceAndPath(HazenNStuff.MOD_ID, "butchers_vanity"), 0.15f,
+                            AttributeModifier.Operation.ADD_MULTIPLIED_BASE)
+                    .addAttributeModifier(AttributeRegistry.SPELL_RESIST,
+                            ResourceLocation.fromNamespaceAndPath(HazenNStuff.MOD_ID, "butchers_vanity"), 0.1f,
+                            AttributeModifier.Operation.ADD_MULTIPLIED_BASE)
+                    .addAttributeModifier(ALObjects.Attributes.LIFE_STEAL,
+                            ResourceLocation.fromNamespaceAndPath(HazenNStuff.MOD_ID, "butchers_vanity"), 0.15f,
+                            AttributeModifier.Operation.ADD_MULTIPLIED_BASE));
+
+    public static final Holder<MobEffect> GRAND_ENDER_DRAGON_EFFECT = MOB_EFFECTS.register("grand_ender_dragon",
+            () -> new TyrantsGraceEffect(MobEffectCategory.BENEFICIAL, 0xfbb741)
+                    .addAttributeModifier(AttributeRegistry.CASTING_MOVESPEED,
+                            ResourceLocation.fromNamespaceAndPath(HazenNStuff.MOD_ID, "grand_ender_dragon"), 0.15f,
+                            AttributeModifier.Operation.ADD_MULTIPLIED_BASE)
+                    .addAttributeModifier(AttributeRegistry.SPELL_RESIST,
+                            ResourceLocation.fromNamespaceAndPath(HazenNStuff.MOD_ID, "grand_ender_dragon"), 0.1f,
+                            AttributeModifier.Operation.ADD_MULTIPLIED_BASE)
+                    .addAttributeModifier(ALObjects.Attributes.ELYTRA_FLIGHT,
+                            ResourceLocation.fromNamespaceAndPath(HazenNStuff.MOD_ID, "grand_ender_dragon"), 1f,
+                            AttributeModifier.Operation.ADD_VALUE));
 
     public static void register(IEventBus eventBus) {
         MOB_EFFECTS.register(eventBus);

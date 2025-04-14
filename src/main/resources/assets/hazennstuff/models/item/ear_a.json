@@ -1,0 +1,19 @@
+{
+  "parent": "minecraft:item/handheld",
+  "loader": "neoforge:separate_transforms",
+  "base": {
+    "textures": {
+      "book": "hazennstuff:item/elf_ears_models/elf_ear_a",
+      "particle": "hazennstuff:item/elf_ears_models/elf_ear_a"
+    },
+    "parent": "hazennstuff:item/elf_ears_template"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "hazennstuff:item/divine_mold"
+      }
+    }
+  }
+}

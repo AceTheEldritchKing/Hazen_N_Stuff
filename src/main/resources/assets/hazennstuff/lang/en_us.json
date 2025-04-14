@@ -59,7 +59,17 @@
   "item.hazennstuff.cryogenic_ruler_helmet": "Cryogenic Ruler's Crown",
   "item.hazennstuff.cryogenic_ruler_chestplate": "Cryogenic Ruler's Chestplate",
   "item.hazennstuff.cryogenic_ruler_leggings": "Cryogenic Ruler's Leggings",
-  "item.hazennstuff.cryogenic_ruler_boots": "Cryogenic Ruler's Boots",
+  "item.hazennstuff.cryogenic_ruler_boots": "Flurry Boots",
+
+  "item.hazennstuff.ender_dragon_helmet": "Ender Dragon Horns",
+  "item.hazennstuff.ender_dragon_chestplate": "Ender Dragon Chestplate",
+  "item.hazennstuff.ender_dragon_leggings": "Ender Dragon Leggings",
+  "item.hazennstuff.ender_dragon_boots": "Ender Dragon Boots",
+
+  "item.hazennstuff.flesh_mass_helmet": "Flesh Mass Helmet",
+  "item.hazennstuff.flesh_mass_chestplate": "Flesh Mass Chestplate",
+  "item.hazennstuff.flesh_mass_leggings": "Flesh Mass Leggings",
+  "item.hazennstuff.flesh_mass_boots": "Flesh Mass Boots",
 
 
   "curios.modifiers.mana_crystal": "When using the Mana Crystal:",
@@ -76,6 +86,9 @@
   "effect.hazennstuff.seraphs_might": "Seraph's Might",
   "effect.hazennstuff.sadistic_nature": "Sadistic Nature",
   "effect.hazennstuff.burning_point": "Burning Point",
+  "effect.hazennstuff.butchers_vanity": "Butcher's Vanity",
+  "effect.hazennstuff.sub_zero": "Sub Zero",
+  "effect.hazennstuff.grand_ender_dragon": "Grand Ender Dragon",
 
 
   "sounds.hazennstuff.soul_flame_equip": "Soul Flame Armor Equipped",
@@ -83,6 +96,9 @@
   "sounds.hazennstuff.creaking_sorcerer_equip": "Creaking Sorcerer Armor Equipped",
   "sounds.hazennstuff.seraph_equip": "Seraph Armor Equipped",
   "sounds.hazennstuff.supreme_witch_equip": "Supreme Witch Armor Equipped",
+  "sounds.hazennstuff.cryogenic_ruler_equip": "Cryogenic Ruler Armor Equipped",
+  "sounds.hazennstuff.flesh_mass_equip": "Flesh Mass Armor Equipped",
+  "sounds.hazennstuff.ender_dragon_equip": "Ender Dragon Armor Equipped",
 
 
 

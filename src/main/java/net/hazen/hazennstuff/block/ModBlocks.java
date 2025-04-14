@@ -1,7 +1,7 @@
 package net.hazen.hazennstuff.block;
 
 import net.hazen.hazennstuff.HazenNStuff;
-import net.hazen.hazennstuff.registries.ModItems;
+import net.hazen.hazennstuff.item.item.HnSItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -51,7 +51,7 @@ public class ModBlocks {
     }
 
     private static <T extends Block> void registerBlockItem(String name, DeferredBlock<T> block) {
-        ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
+        HnSItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
     }
 
     public static void register(IEventBus eventBus) {

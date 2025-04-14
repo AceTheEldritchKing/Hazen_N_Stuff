@@ -22,7 +22,6 @@ public class ModSounds {
     public static final Holder<SoundEvent> SOUL_FLAME_EQUIP_2 = registerSoundEvent("soul_flame_equip_2");
     public static final Holder<SoundEvent> SOUL_FLAME_EQUIP_3 = registerSoundEvent("soul_flame_equip_3");
     public static final Holder<SoundEvent> SOUL_FLAME_EQUIP_4 = registerSoundEvent("soul_flame_equip_4");
-    public static final Holder<SoundEvent> SOUL_FLAME_EQUIP_5 = registerSoundEvent("soul_flame_equip_5");
 
     public static final Holder<SoundEvent> SOUL_FLAME_EQUIP = registerSoundEvent("soul_flame_equip");
 
@@ -61,6 +60,38 @@ public class ModSounds {
     public static final Holder<SoundEvent> CREAKING_SORCERER_EQUIP_4 = registerSoundEvent("creaking_sorcerer_equip_4");
 
     public static final Holder<SoundEvent> CREAKING_SORCERER_EQUIP = registerSoundEvent("creaking_sorcerer_equip");
+
+    //Flesh Mass Equip
+
+    public static final Holder<SoundEvent> FLESH_MASS_EQUIP_1 = registerSoundEvent("flesh_mass_equip_1");
+    public static final Holder<SoundEvent> FLESH_MASS_EQUIP_2 = registerSoundEvent("flesh_mass_equip_2");
+    public static final Holder<SoundEvent> FLESH_MASS_EQUIP_3 = registerSoundEvent("flesh_mass_equip_3");
+    public static final Holder<SoundEvent> FLESH_MASS_EQUIP_4 = registerSoundEvent("flesh_mass_equip_4");
+    public static final Holder<SoundEvent> FLESH_MASS_EQUIP_5 = registerSoundEvent("flesh_mass_equip_5");
+    public static final Holder<SoundEvent> FLESH_MASS_EQUIP_6 = registerSoundEvent("flesh_mass_equip_6");
+    public static final Holder<SoundEvent> FLESH_MASS_EQUIP_7 = registerSoundEvent("flesh_mass_equip_7");
+
+    public static final Holder<SoundEvent> FLESH_MASS_EQUIP = registerSoundEvent("flesh_mass_equip");
+
+    //Cryogenic Ruler Equip
+
+    public static final Holder<SoundEvent> CRYOGENIC_RULER_EQUIP_1 = registerSoundEvent("cryogenic_ruler_equip_1");
+    public static final Holder<SoundEvent> CRYOGENIC_RULER_EQUIP_2 = registerSoundEvent("cryogenic_ruler_equip_2");
+    public static final Holder<SoundEvent> CRYOGENIC_RULER_EQUIP_3 = registerSoundEvent("cryogenic_ruler_equip_3");
+    public static final Holder<SoundEvent> CRYOGENIC_RULER_EQUIP_4 = registerSoundEvent("cryogenic_ruler_equip_4");
+
+    public static final Holder<SoundEvent> CRYOGENIC_RULER_EQUIP = registerSoundEvent("cryogenic_ruler_equip");
+
+
+    //Ender Dragon Equip
+
+    public static final Holder<SoundEvent> ENDER_DRAGON_EQUIP_1 = registerSoundEvent("ender_dragon_equip_1");
+    public static final Holder<SoundEvent> ENDER_DRAGON_EQUIP_2 = registerSoundEvent("ender_dragon_equip_2");
+    public static final Holder<SoundEvent> ENDER_DRAGON_EQUIP_3 = registerSoundEvent("ender_dragon_equip_3");
+    public static final Holder<SoundEvent> ENDER_DRAGON_EQUIP_4 = registerSoundEvent("ender_dragon_equip_4");
+
+    public static final Holder<SoundEvent> ENDER_DRAGON_EQUIP = registerSoundEvent("ender_dragon_equip");
+
 
 
 

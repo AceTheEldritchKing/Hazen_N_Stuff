@@ -2,9 +2,9 @@ package net.hazen.hazennstuff;
 
 import net.hazen.hazennstuff.block.ModBlocks;
 import net.hazen.hazennstuff.effect.ModEffects;
-import net.hazen.hazennstuff.item.ModCreativeModeTabs;
-import net.hazen.hazennstuff.item.armor.ModArmorMaterials;
-import net.hazen.hazennstuff.registries.ModItems;
+import net.hazen.hazennstuff.item.HnSCreativeModeTabs;
+import net.hazen.hazennstuff.item.armor.HnSArmorMaterials;
+import net.hazen.hazennstuff.item.item.HnSItems;
 import net.hazen.hazennstuff.sound.ModSounds;
 import net.minecraft.resources.ResourceLocation;
 import org.jetbrains.annotations.NotNull;
@@ -66,11 +66,11 @@ public class HazenNStuff
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
 
-        ModCreativeModeTabs.register(modEventBus);
+        HnSCreativeModeTabs.register(modEventBus);
 
-        ModItems.register(modEventBus);
+        HnSItems.register(modEventBus);
         ModBlocks.register(modEventBus);
-        ModArmorMaterials.register(modEventBus);
+        HnSArmorMaterials.register(modEventBus);
 
         ModEffects.register(modEventBus);
         ModSounds.register(modEventBus);
@@ -100,11 +100,11 @@ public class HazenNStuff
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS)
-            event.accept(ModItems.ZENALITE);
+            event.accept(HnSItems.ZENALITE);
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS)
-            event.accept(ModItems.RAWZENALITE);
+            event.accept(HnSItems.RAWZENALITE);
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS)
-            event.accept(ModItems.STARKISSEDZENALITE);
+            event.accept(HnSItems.STARKISSEDZENALITE);
 
         if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS)
             event.accept (ModBlocks.ZENALITE_ABYSSLATE_ORE);

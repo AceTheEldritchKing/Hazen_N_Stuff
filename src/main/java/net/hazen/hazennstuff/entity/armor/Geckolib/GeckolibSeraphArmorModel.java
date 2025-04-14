@@ -1,0 +1,28 @@
+package net.hazen.hazennstuff.entity.armor.Geckolib;
+
+import io.redspace.ironsspellbooks.IronsSpellbooks;
+import net.hazen.hazennstuff.HazenNStuff;
+import net.hazen.hazennstuff.item.armor.Geckolib.GeckolibSeraphArmorItem;
+import net.minecraft.resources.ResourceLocation;
+import software.bernie.geckolib.model.DefaultedEntityGeoModel;
+
+public class GeckolibSeraphArmorModel extends DefaultedEntityGeoModel<GeckolibSeraphArmorItem> {
+    public GeckolibSeraphArmorModel() {
+        super(ResourceLocation.fromNamespaceAndPath(HazenNStuff.MOD_ID, ""));
+    }
+
+    @Override
+    public ResourceLocation getModelResource(GeckolibSeraphArmorItem animatable) {
+        return ResourceLocation.fromNamespaceAndPath(HazenNStuff.MOD_ID, "geo/seraph_armor.geo.json");
+    }
+
+    @Override
+    public ResourceLocation getTextureResource(GeckolibSeraphArmorItem animatable) {
+        return ResourceLocation.fromNamespaceAndPath(HazenNStuff.MOD_ID, "textures/models/armor/seraph_armor.png");
+    }
+
+    @Override
+    public ResourceLocation getAnimationResource(GeckolibSeraphArmorItem animatable) {
+        return ResourceLocation.fromNamespaceAndPath(IronsSpellbooks.MODID, "animation/wizard_armor_animation.json");
+    }
+}
