@@ -3,7 +3,7 @@ package net.hazen.hazennstuff.item.armor.Geckolib;
 import io.redspace.ironsspellbooks.api.registry.AttributeRegistry;
 import io.redspace.ironsspellbooks.entity.armor.GenericCustomArmorRenderer;
 import io.redspace.ironsspellbooks.item.weapons.AttributeContainer;
-import net.hazen.hazennstuff.effect.ModEffects;
+import net.hazen.hazennstuff.effect.HnSEffects;
 import net.hazen.hazennstuff.entity.armor.Geckolib.GeckolibCryogenicRulerArmorModel;
 import net.hazen.hazennstuff.item.armor.HnSArmorMaterials;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -44,8 +44,8 @@ public class GeckolibCryogenicRulerArmorItem extends ImbuableGeckolibHnSArmorIte
     }
 
     private void evaluateArmorEffects(Player player) {
-        if (!player.hasEffect(ModEffects.SUB_ZERO_EFFECT)) {
-            player.addEffect(new MobEffectInstance(ModEffects.SUB_ZERO_EFFECT, 200, 0, false, false, true));
+        if (!player.hasEffect(HnSEffects.SUB_ZERO_EFFECT)) {
+            player.addEffect(new MobEffectInstance(HnSEffects.SUB_ZERO_EFFECT, 200, 0, false, false, true));
         }
     }
 

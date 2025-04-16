@@ -1,11 +1,11 @@
 package net.hazen.hazennstuff;
 
-import net.hazen.hazennstuff.block.ModBlocks;
-import net.hazen.hazennstuff.effect.ModEffects;
+import net.hazen.hazennstuff.block.HnSBlocks;
+import net.hazen.hazennstuff.effect.HnSEffects;
 import net.hazen.hazennstuff.item.HnSCreativeModeTabs;
 import net.hazen.hazennstuff.item.armor.HnSArmorMaterials;
 import net.hazen.hazennstuff.item.item.HnSItems;
-import net.hazen.hazennstuff.sound.ModSounds;
+import net.hazen.hazennstuff.sound.HnSSounds;
 import net.minecraft.resources.ResourceLocation;
 import org.jetbrains.annotations.NotNull;
 import org.slf4j.Logger;
@@ -69,11 +69,11 @@ public class HazenNStuff
         HnSCreativeModeTabs.register(modEventBus);
 
         HnSItems.register(modEventBus);
-        ModBlocks.register(modEventBus);
+        HnSBlocks.register(modEventBus);
         HnSArmorMaterials.register(modEventBus);
 
-        ModEffects.register(modEventBus);
-        ModSounds.register(modEventBus);
+        HnSEffects.register(modEventBus);
+        HnSSounds.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -107,19 +107,19 @@ public class HazenNStuff
             event.accept(HnSItems.STARKISSEDZENALITE);
 
         if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS)
-            event.accept (ModBlocks.ZENALITE_ABYSSLATE_ORE);
+            event.accept (HnSBlocks.ZENALITE_ABYSSLATE_ORE);
         if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS)
-            event.accept (ModBlocks.ZENALITE_BRICKS);
+            event.accept (HnSBlocks.ZENALITE_BRICKS);
         if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS)
-            event.accept (ModBlocks.PHANTASMIUM);
+            event.accept (HnSBlocks.PHANTASMIUM);
         if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS)
-            event.accept (ModBlocks.BLOCK_OF_ZENALITE);
+            event.accept (HnSBlocks.BLOCK_OF_ZENALITE);
         if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS)
-            event.accept (ModBlocks.ABYSSLATE);
+            event.accept (HnSBlocks.ABYSSLATE);
         if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS)
-            event.accept (ModBlocks.ZENALITE_DEEPSLATE_ORE);
+            event.accept (HnSBlocks.ZENALITE_DEEPSLATE_ORE);
         if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS)
-            event.accept (ModBlocks.ZENALITE_STONE_ORE);
+            event.accept (HnSBlocks.ZENALITE_STONE_ORE);
 
 
         /*if (event.getTabKey() == CreativeModeTabs.COMBAT)

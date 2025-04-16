@@ -14,12 +14,12 @@ public class GeckolibSoulFlameArmorModel extends DefaultedEntityGeoModel<Geckoli
     // Just replace where the path is with the file path of your texture, EZ PZ
     @Override
     public ResourceLocation getModelResource(GeckolibSoulFlameArmorItem animatable) {
-        return ResourceLocation.fromNamespaceAndPath(HazenNStuff.MOD_ID, "geo/soul_flame_armor.geo.json");
+        return ResourceLocation.fromNamespaceAndPath(HazenNStuff.MOD_ID, "geo/soul_flame_armor_geckolib.geo.json");
     }
 
     @Override
     public ResourceLocation getTextureResource(GeckolibSoulFlameArmorItem animatable) {
-        return ResourceLocation.fromNamespaceAndPath(HazenNStuff.MOD_ID, "textures/models/armor/soul_flame_armor.png");
+        return ResourceLocation.fromNamespaceAndPath(HazenNStuff.MOD_ID, "textures/models/armor/geckolib/soul_flame_armor_geckolib.png");
     }
 
     @Override

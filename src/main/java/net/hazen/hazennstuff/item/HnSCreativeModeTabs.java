@@ -1,7 +1,7 @@
 package net.hazen.hazennstuff.item;
 
 import net.hazen.hazennstuff.HazenNStuff;
-import net.hazen.hazennstuff.block.ModBlocks;
+import net.hazen.hazennstuff.block.HnSBlocks;
 import net.hazen.hazennstuff.item.item.HnSItems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -29,16 +29,16 @@ public class HnSCreativeModeTabs {
                     }).build());
 
     public static final Supplier<CreativeModeTab> HAZEN_N_STUFF_BLOCKS = CREATIVE_MODE_TAB.register("hazennstuff_blocks",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.ZENALITE_ABYSSLATE_ORE.get()))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(HnSBlocks.ZENALITE_ABYSSLATE_ORE.get()))
                     .title(Component.translatable("creativetab.hazennstuff.hazennstuff_blocks"))
                     .displayItems((itemDisplayParameters, output) -> {
-                        output.accept(ModBlocks.BLOCK_OF_ZENALITE);
-                        output.accept(ModBlocks.ZENALITE_BRICKS);
-                        output.accept(ModBlocks.ZENALITE_DEEPSLATE_ORE);
-                        output.accept(ModBlocks.ZENALITE_STONE_ORE);
-                        output.accept(ModBlocks.ZENALITE_ABYSSLATE_ORE);
-                        output.accept(ModBlocks.ABYSSLATE);
-                        output.accept(ModBlocks.PHANTASMIUM);
+                        output.accept(HnSBlocks.BLOCK_OF_ZENALITE);
+                        output.accept(HnSBlocks.ZENALITE_BRICKS);
+                        output.accept(HnSBlocks.ZENALITE_DEEPSLATE_ORE);
+                        output.accept(HnSBlocks.ZENALITE_STONE_ORE);
+                        output.accept(HnSBlocks.ZENALITE_ABYSSLATE_ORE);
+                        output.accept(HnSBlocks.ABYSSLATE);
+                        output.accept(HnSBlocks.PHANTASMIUM);
                     }).build());
 
     public static final Supplier<CreativeModeTab> HAZEN_N_STUFF_EQUIPMENT = CREATIVE_MODE_TAB.register("hazennstuff_equipment",
@@ -76,21 +76,31 @@ public class HnSCreativeModeTabs {
                         output.accept(HnSItems.SUPREME_WITCH_CHESTPLATE.get());
                         output.accept(HnSItems.SUPREME_WITCH_LEGGINGS.get());
                         output.accept(HnSItems.SUPREME_WITCH_BOOTS.get());
-                        // Supreme Witch
+                        // Cryogenic Ruler
                         output.accept(HnSItems.CRYOGENIC_RULER_HELMET.get());
                         output.accept(HnSItems.CRYOGENIC_RULER_CHESTPLATE.get());
                         output.accept(HnSItems.CRYOGENIC_RULER_LEGGINGS.get());
                         output.accept(HnSItems.CRYOGENIC_RULER_BOOTS.get());
-                        // Supreme Witch
+                        // Flesh Mass
                         output.accept(HnSItems.FLESH_MASS_HELMET.get());
                         output.accept(HnSItems.FLESH_MASS_CHESTPLATE.get());
                         output.accept(HnSItems.FLESH_MASS_LEGGINGS.get());
                         output.accept(HnSItems.FLESH_MASS_BOOTS.get());
-                        // Supreme Witch
+                        // Ender Dragon
                         output.accept(HnSItems.ENDER_DRAGON_HELMET.get());
                         output.accept(HnSItems.ENDER_DRAGON_CHESTPLATE.get());
                         output.accept(HnSItems.ENDER_DRAGON_LEGGINGS.get());
                         output.accept(HnSItems.ENDER_DRAGON_BOOTS.get());
+                        // Supreme Witch
+                        output.accept(HnSItems.DARK_RITUAL_TEMPLAR_HELMET.get());
+                        output.accept(HnSItems.DARK_RITUAL_TEMPLAR_CHESTPLATE.get());
+                        output.accept(HnSItems.DARK_RITUAL_TEMPLAR_LEGGINGS.get());
+                        output.accept(HnSItems.DARK_RITUAL_TEMPLAR_BOOTS.get());
+                        // Supreme Witch
+                        output.accept(HnSItems.FRIEREN_HELMET.get());
+                        output.accept(HnSItems.FRIEREN_CHESTPLATE.get());
+                        output.accept(HnSItems.FRIEREN_LEGGINGS.get());
+                        output.accept(HnSItems.FRIEREN_BOOTS.get());
 
 
                         //Curios

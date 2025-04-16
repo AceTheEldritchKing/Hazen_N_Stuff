@@ -3,43 +3,35 @@ package net.hazen.hazennstuff.item.armor;
 import com.google.common.base.Suppliers;
 import io.redspace.ironsspellbooks.api.registry.AttributeRegistry;
 import io.redspace.ironsspellbooks.item.weapons.AttributeContainer;
-import net.minecraft.client.model.HumanoidModel;
+import mod.azure.azurelib.common.api.common.animatable.GeoItem;
+import mod.azure.azurelib.common.internal.client.RenderProvider;
+import mod.azure.azurelib.common.internal.common.util.AzureLibUtil;
+import mod.azure.azurelib.core.animatable.instance.AnimatableInstanceCache;
+import mod.azure.azurelib.core.animation.AnimatableManager;
+import mod.azure.azurelib.core.animation.AnimationController;
+import mod.azure.azurelib.core.animation.RawAnimation;
 import net.minecraft.core.Holder;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.EquipmentSlotGroup;
-import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.ai.attributes.Attribute;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterial;
-import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.component.ItemAttributeModifiers;
-import net.neoforged.api.distmarker.Dist;
-import net.neoforged.api.distmarker.OnlyIn;
-import software.bernie.geckolib.animatable.GeoItem;
-import software.bernie.geckolib.animatable.client.GeoRenderProvider;
-import software.bernie.geckolib.animatable.instance.AnimatableInstanceCache;
-import software.bernie.geckolib.animation.*;
-import software.bernie.geckolib.renderer.GeoArmorRenderer;
-import software.bernie.geckolib.util.GeckoLibUtil;
 
-import javax.annotation.Nullable;
 import java.util.function.Consumer;
 import java.util.function.Supplier;
 
 public class HnSArmorItem extends ArmorItem implements GeoItem {
-    // I copied this stuff from DTE, once you have this armor item class set up
-    // You don't need to touch it any further
-
-    private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
+    private final AnimatableInstanceCache cache = AzureLibUtil.createInstanceCache(this);
     private final Supplier<ItemAttributeModifiers> defaultModifiers;
 
     public HnSArmorItem(Holder<ArmorMaterial> material, Type type, Properties properties, AttributeContainer... attributeContainers) {
         super(material, type, properties);
         this.defaultModifiers = Suppliers.memoize(() ->
         {
+            // Looking at how ISS does this because it is 1 AM and I am tired
             int i = material.value().getDefense(type);
             float f = material.value().toughness();
             ItemAttributeModifiers.Builder builder = ItemAttributeModifiers.builder();
@@ -62,15 +54,12 @@ public class HnSArmorItem extends ArmorItem implements GeoItem {
         });
     }
 
-    // These two methods are used for giving additional attributes to armor sets. Feel free to edit these!
     public static AttributeContainer[] schoolAttributes(Holder<Attribute> school, int mana, float schoolSpellPower, float spellPower)
     {
         return new AttributeContainer[]{
                 new AttributeContainer(AttributeRegistry.MAX_MANA, mana, AttributeModifier.Operation.ADD_VALUE),
                 new AttributeContainer(school, schoolSpellPower, AttributeModifier.Operation.ADD_MULTIPLIED_BASE),
-                new AttributeContainer(AttributeRegistry.SPELL_POWER, spellPower, AttributeModifier.Operation.ADD_MULTIPLIED_BASE),
-        };
-
+                new AttributeContainer(AttributeRegistry.SPELL_POWER, spellPower, AttributeModifier.Operation.ADD_MULTIPLIED_BASE)};
     }
 
     // Can also be used for giving two attributes, doesn't have to be resistance
@@ -88,44 +77,22 @@ public class HnSArmorItem extends ArmorItem implements GeoItem {
         return this.defaultModifiers.get();
     }
 
-    // Geckolib
+    // AzureLib
     @Override
-    public void registerControllers(AnimatableManager.ControllerRegistrar controllers) {
-        // Don't put anything in here, no need to
-        //controllers.add(new AnimationController<ModArmorItem>(this, "controller", this::predicate));
+    public void createRenderer(Consumer<RenderProvider> consumer) {
+        // Can I just leave this empty?
     }
 
-    // Don't do anything w/ this
-    private PlayState predicate(AnimationState<HnSArmorItem> itemAnimationState)
-    {
-        itemAnimationState.getController().setAnimation(RawAnimation.begin().thenLoop("idle"));
-        return PlayState.CONTINUE;
+    @Override
+    public void registerControllers(AnimatableManager.ControllerRegistrar controllers) {
+        controllers.add(new AnimationController<>(this, "controler", 0, event ->
+        {
+            return event.setAndContinue(RawAnimation.begin().thenLoop("idle"));
+        }));
     }
 
     @Override
     public AnimatableInstanceCache getAnimatableInstanceCache() {
         return cache;
-    }
-
-    
-
-    @Override
-    public void createGeoRenderer(Consumer<GeoRenderProvider> consumer) {
-        consumer.accept(new GeoRenderProvider() {
-            private GeoArmorRenderer<?> renderer;
-
-            @Override
-            public <T extends LivingEntity> HumanoidModel<?> getGeoArmorRenderer(@Nullable T livingEntity, ItemStack itemStack, @Nullable EquipmentSlot equipmentSlot, @Nullable HumanoidModel<T> original) {
-                if (this.renderer == null) {
-                    this.renderer = supplyRenderer();
-                }
-                return this.renderer;
-            }
-        });
-    }
-
-    @OnlyIn(Dist.CLIENT)
-    public GeoArmorRenderer<?> supplyRenderer() {
-        return null;
     }
 }

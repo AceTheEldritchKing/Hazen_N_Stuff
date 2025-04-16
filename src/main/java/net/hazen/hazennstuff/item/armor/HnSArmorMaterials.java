@@ -1,8 +1,10 @@
 package net.hazen.hazennstuff.item.armor;
 
+import io.redspace.ironsspellbooks.IronsSpellbooks;
+import io.redspace.ironsspellbooks.registries.ItemRegistry;
 import net.hazen.hazennstuff.HazenNStuff;
 import net.hazen.hazennstuff.item.item.HnSItems;
-import net.hazen.hazennstuff.sound.ModSounds;
+import net.hazen.hazennstuff.sound.HnSSounds;
 import net.minecraft.Util;
 import net.minecraft.core.Holder;
 import net.minecraft.core.registries.Registries;
@@ -25,7 +27,7 @@ public class HnSArmorMaterials {
     public static DeferredHolder<ArmorMaterial, ArmorMaterial> CREAKING_SORCERER_MATERIAL = register("creaking",
             warlockArmorMap(),
             16,
-            ModSounds.CREAKING_SORCERER_EQUIP,
+            HnSSounds.CREAKING_SORCERER_EQUIP,
             () -> Ingredient.of(HnSItems.ZENALITE.get()),
             2,
             0.1F);
@@ -33,7 +35,7 @@ public class HnSArmorMaterials {
     public static DeferredHolder<ArmorMaterial, ArmorMaterial> SERAPH_MATERIAL = register("seraph",
             warlockArmorMap(),
             16,
-            ModSounds.SERAPH_EQUIP,
+            HnSSounds.SERAPH_EQUIP,
             () -> Ingredient.of(HnSItems.ZENALITE.get()),
             2,
             0.1F);
@@ -49,7 +51,7 @@ public class HnSArmorMaterials {
     public static DeferredHolder<ArmorMaterial, ArmorMaterial> CHARGED_SCOURGE_MATERIAL = register("scourge",
             warlockArmorMap(),
             16,
-            ModSounds.CHARGED_SCOURGE_EQUIP,
+            HnSSounds.CHARGED_SCOURGE_EQUIP,
             () -> Ingredient.of(HnSItems.ZENALITE.get()),
             2,
             0.1F);
@@ -57,7 +59,7 @@ public class HnSArmorMaterials {
     public static DeferredHolder<ArmorMaterial, ArmorMaterial> SOUL_FLAME_MATERIAL = register("soul_flame",
             warlockArmorMap(),
             16,
-            ModSounds.SOUL_FLAME_EQUIP,
+            HnSSounds.SOUL_FLAME_EQUIP,
             () -> Ingredient.of(HnSItems.ZENALITE.get()),
             2,
             0.1F);
@@ -65,7 +67,7 @@ public class HnSArmorMaterials {
     public static DeferredHolder<ArmorMaterial, ArmorMaterial> SUPREME_WITCH_MATERIAL = register("supreme_witch",
             warlockArmorMap(),
             16,
-            ModSounds.SUPREME_WITCH_EQUIP,
+            HnSSounds.SUPREME_WITCH_EQUIP,
             () -> Ingredient.of(HnSItems.ZENALITE.get()),
             2,
             0.1F);
@@ -73,7 +75,7 @@ public class HnSArmorMaterials {
     public static DeferredHolder<ArmorMaterial, ArmorMaterial> CRYOGENIC_RULER_MATERIAL = register("cryogenic_ruler",
             warlockArmorMap(),
             16,
-            ModSounds.CRYOGENIC_RULER_EQUIP,
+            HnSSounds.CRYOGENIC_RULER_EQUIP,
             () -> Ingredient.of(HnSItems.ZENALITE.get()),
             2,
             0.1F);
@@ -81,7 +83,7 @@ public class HnSArmorMaterials {
     public static DeferredHolder<ArmorMaterial, ArmorMaterial> FLESH_MASS_MATERIAL = register("flesh_mass",
             warlockArmorMap(),
             16,
-            ModSounds.FLESH_MASS_EQUIP,
+            HnSSounds.FLESH_MASS_EQUIP,
             () -> Ingredient.of(HnSItems.ZENALITE.get()),
             2,
             0.1F);
@@ -89,7 +91,23 @@ public class HnSArmorMaterials {
     public static DeferredHolder<ArmorMaterial, ArmorMaterial> ENDER_DRAGON_MATERIAL = register("ender_dragon",
             warlockArmorMap(),
             16,
-            ModSounds.ENDER_DRAGON_EQUIP,
+            HnSSounds.ENDER_DRAGON_EQUIP,
+            () -> Ingredient.of(HnSItems.ZENALITE.get()),
+            2,
+            0.1F);
+
+    public static DeferredHolder<ArmorMaterial, ArmorMaterial> FRIEREN_MATERIAL = register("frieren",
+            warlockArmorMap(),
+            16,
+            SoundEvents.ARMOR_EQUIP_LEATHER,
+            () -> Ingredient.of(ItemRegistry.MAGIC_CLOTH.get()),
+            2,
+            0.1F);
+
+    public static DeferredHolder<ArmorMaterial, ArmorMaterial> DARK_RITUAL_TEMPLAR_MATERIAL = register("dark_ritual_templar",
+            warlockArmorMap(),
+            16,
+            SoundEvents.ARMOR_EQUIP_NETHERITE,
             () -> Ingredient.of(HnSItems.ZENALITE.get()),
             2,
             0.1F);

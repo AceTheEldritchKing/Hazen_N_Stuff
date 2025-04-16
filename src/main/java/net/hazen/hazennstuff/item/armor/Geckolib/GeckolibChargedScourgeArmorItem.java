@@ -3,7 +3,7 @@ package net.hazen.hazennstuff.item.armor.Geckolib;
 import io.redspace.ironsspellbooks.api.registry.AttributeRegistry;
 import io.redspace.ironsspellbooks.entity.armor.GenericCustomArmorRenderer;
 import io.redspace.ironsspellbooks.item.weapons.AttributeContainer;
-import net.hazen.hazennstuff.effect.ModEffects;
+import net.hazen.hazennstuff.effect.HnSEffects;
 import net.hazen.hazennstuff.entity.armor.Geckolib.GeckolibChargedScourgeArmorModel;
 import net.hazen.hazennstuff.item.armor.HnSArmorMaterials;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -24,7 +24,7 @@ public class GeckolibChargedScourgeArmorItem extends ImbuableGeckolibHnSArmorIte
                 new AttributeContainer(AttributeRegistry.MAX_MANA, 150.0, AttributeModifier.Operation.ADD_VALUE),
                 new AttributeContainer(AttributeRegistry.LIGHTNING_SPELL_POWER, .15, AttributeModifier.Operation.ADD_VALUE),
                 new AttributeContainer(AttributeRegistry.ELDRITCH_SPELL_POWER, .05, AttributeModifier.Operation.ADD_VALUE),
-                new AttributeContainer(AttributeRegistry.SPELL_POWER, .5, AttributeModifier.Operation.ADD_VALUE)
+                new AttributeContainer(AttributeRegistry.SPELL_POWER, .05, AttributeModifier.Operation.ADD_VALUE)
         );
     }
 
@@ -44,8 +44,8 @@ public class GeckolibChargedScourgeArmorItem extends ImbuableGeckolibHnSArmorIte
     }
 
     private void evaluateArmorEffects(Player player) {
-        if (!player.hasEffect(ModEffects.SCOURGES_GORGE_EFFECT)) {
-            player.addEffect(new MobEffectInstance(ModEffects.SCOURGES_GORGE_EFFECT, 200, 0, false, false, true));
+        if (!player.hasEffect(HnSEffects.SCOURGES_GORGE_EFFECT)) {
+            player.addEffect(new MobEffectInstance(HnSEffects.SCOURGES_GORGE_EFFECT, 200, 0, false, false, true));
         }
     }
 

@@ -3,9 +3,8 @@ package net.hazen.hazennstuff.item.armor.Geckolib;
 import io.redspace.ironsspellbooks.api.registry.AttributeRegistry;
 import io.redspace.ironsspellbooks.entity.armor.GenericCustomArmorRenderer;
 import io.redspace.ironsspellbooks.item.weapons.AttributeContainer;
-import net.hazen.hazennstuff.effect.ModEffects;
-import net.hazen.hazennstuff.entity.armor.Geckolib.LegionnaireArmorModel;
-import net.hazen.hazennstuff.item.armor.HnSArmorItem;
+import net.hazen.hazennstuff.effect.HnSEffects;
+import net.hazen.hazennstuff.entity.armor.Geckolib.GeckolibLegionnaireArmorModel;
 import net.hazen.hazennstuff.item.armor.HnSArmorMaterials;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.Entity;
@@ -19,8 +18,8 @@ import net.neoforged.api.distmarker.Dist;
 import net.neoforged.api.distmarker.OnlyIn;
 import software.bernie.geckolib.renderer.GeoArmorRenderer;
 
-public class LegionnaireArmorItem extends HnSGeckolibArmorItem {
-    public LegionnaireArmorItem(Type type, Properties settings) {
+public class GeckolibLegionnaireArmorItem extends HnSGeckolibArmorItem {
+    public GeckolibLegionnaireArmorItem(Type type, Properties settings) {
         super(HnSArmorMaterials.LEGIONNAIRE_MATERIAL, type, settings,
                 new AttributeContainer(AttributeRegistry.SPELL_RESIST, .05, AttributeModifier.Operation.ADD_VALUE),
                 new AttributeContainer(Attributes.MAX_HEALTH, 1.25, AttributeModifier.Operation.ADD_VALUE)
@@ -32,7 +31,7 @@ public class LegionnaireArmorItem extends HnSGeckolibArmorItem {
     @Override
     @OnlyIn(Dist.CLIENT)
     public GeoArmorRenderer<?> supplyRenderer() {
-        return new GenericCustomArmorRenderer<>(new LegionnaireArmorModel());
+        return new GenericCustomArmorRenderer<>(new GeckolibLegionnaireArmorModel());
     }
 
     @Override
@@ -43,15 +42,15 @@ public class LegionnaireArmorItem extends HnSGeckolibArmorItem {
     }
 
     private void evaluateArmorEffects(Player player) {
-        if (!player.hasEffect(ModEffects.TYRANTS_GRACE_EFFECT)) {
-            player.addEffect(new MobEffectInstance(ModEffects.TYRANTS_GRACE_EFFECT, 200, 0, false, false, true));
+        if (!player.hasEffect(HnSEffects.TYRANTS_GRACE_EFFECT)) {
+            player.addEffect(new MobEffectInstance(HnSEffects.TYRANTS_GRACE_EFFECT, 200, 0, false, false, true));
         }
     }
 
     private boolean isWearingFullSet(Player player) {
-        return player.getItemBySlot(ArmorItem.Type.HELMET.getSlot()).getItem() instanceof LegionnaireArmorItem &&
-                player.getItemBySlot(ArmorItem.Type.CHESTPLATE.getSlot()).getItem() instanceof LegionnaireArmorItem &&
-                player.getItemBySlot(ArmorItem.Type.LEGGINGS.getSlot()).getItem() instanceof LegionnaireArmorItem &&
-                player.getItemBySlot(ArmorItem.Type.BOOTS.getSlot()).getItem() instanceof LegionnaireArmorItem;
+        return player.getItemBySlot(ArmorItem.Type.HELMET.getSlot()).getItem() instanceof GeckolibLegionnaireArmorItem &&
+                player.getItemBySlot(ArmorItem.Type.CHESTPLATE.getSlot()).getItem() instanceof GeckolibLegionnaireArmorItem &&
+                player.getItemBySlot(ArmorItem.Type.LEGGINGS.getSlot()).getItem() instanceof GeckolibLegionnaireArmorItem &&
+                player.getItemBySlot(ArmorItem.Type.BOOTS.getSlot()).getItem() instanceof GeckolibLegionnaireArmorItem;
     }
 }

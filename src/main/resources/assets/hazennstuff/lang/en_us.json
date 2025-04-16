@@ -26,6 +26,46 @@
 
 
 
+  "item.hazennstuff.geckolib_creaking_helmet": "Creaking Mask",
+  "item.hazennstuff.geckolib_creaking_chestplate": "Creaking Chestplate",
+  "item.hazennstuff.geckolib_creaking_leggings": "Creaking Leggings",
+  "item.hazennstuff.geckolib_creaking_boots": "Creaking Boots",
+
+  "item.hazennstuff.geckolib_seraph_helmet": "Seraph Visor",
+  "item.hazennstuff.geckolib_seraph_chestplate": "Seraph Breastplate",
+  "item.hazennstuff.geckolib_seraph_leggings": "Seraph Leggings",
+  "item.hazennstuff.geckolib_seraph_boots": "Seraph Tracers",
+
+  "item.hazennstuff.geckolib_charged_scourge_helmet": "Scourge Mask",
+  "item.hazennstuff.geckolib_charged_scourge_chestplate": "Scourge Scale Mail",
+  "item.hazennstuff.geckolib_charged_scourge_leggings": "Scourge Kneepads",
+  "item.hazennstuff.geckolib_charged_scourge_boots": "Scourge Treads",
+
+  "item.hazennstuff.geckolib_soul_flame_helmet": "Soul Flame Mask",
+  "item.hazennstuff.geckolib_soul_flame_chestplate": "Soul Flame Chestplate",
+  "item.hazennstuff.geckolib_soul_flame_leggings": "Soul Flame Leggings",
+  "item.hazennstuff.geckolib_soul_flame_boots": "Soul Flame Tracers",
+
+  "item.hazennstuff.geckolib_supreme_witch_helmet": "Supreme Witch Hat",
+  "item.hazennstuff.geckolib_supreme_witch_chestplate": "Supreme Witch Robes",
+  "item.hazennstuff.geckolib_supreme_witch_leggings": "Supreme Witch Leggings",
+  "item.hazennstuff.geckolib_supreme_witch_boots": "Supreme Witch Boots",
+
+  "item.hazennstuff.geckolib_cryogenic_ruler_helmet": "Cryogenic Ruler's Crown",
+  "item.hazennstuff.geckolib_cryogenic_ruler_chestplate": "Cryogenic Ruler's Chestplate",
+  "item.hazennstuff.geckolib_cryogenic_ruler_leggings": "Cryogenic Ruler's Leggings",
+  "item.hazennstuff.geckolib_cryogenic_ruler_boots": "Flurry Boots",
+
+  "item.hazennstuff.geckolib_ender_dragon_helmet": "Ender Dragon Horns",
+  "item.hazennstuff.geckolib_ender_dragon_chestplate": "Ender Dragon Chestplate",
+  "item.hazennstuff.geckolib_ender_dragon_leggings": "Ender Dragon Leggings",
+  "item.hazennstuff.geckolib_ender_dragon_boots": "Ender Dragon Boots",
+
+  "item.hazennstuff.geckolib_flesh_mass_helmet": "Flesh Mass Helmet",
+  "item.hazennstuff.geckolib_flesh_mass_chestplate": "Flesh Mass Chestplate",
+  "item.hazennstuff.geckolib_flesh_mass_leggings": "Flesh Mass Leggings",
+  "item.hazennstuff.geckolib_flesh_mass_boots": "Flesh Mass Boots",
+
   "item.hazennstuff.creaking_helmet": "Creaking Mask",
   "item.hazennstuff.creaking_chestplate": "Creaking Chestplate",
   "item.hazennstuff.creaking_leggings": "Creaking Leggings",
@@ -70,6 +110,21 @@
   "item.hazennstuff.flesh_mass_chestplate": "Flesh Mass Chestplate",
   "item.hazennstuff.flesh_mass_leggings": "Flesh Mass Leggings",
   "item.hazennstuff.flesh_mass_boots": "Flesh Mass Boots",
+
+  "item.hazennstuff.dark_ritual_templar_helmet": "Some Woman's Hair",
+  "item.hazennstuff.dark_ritual_templar_chestplate": "Dark Ritual Templar Chestplate",
+  "item.hazennstuff.dark_ritual_templar_leggings": "Dark Ritual Templar Leggings",
+  "item.hazennstuff.dark_ritual_templar_boots": "Dark Ritual Templar Boots",
+
+  "item.hazennstuff.geckolib_dark_ritual_templar_helmet": "Some Woman's Horns",
+  "item.hazennstuff.geckolib_dark_ritual_templar_chestplate": "Dark Ritual Templar Chestplate",
+  "item.hazennstuff.geckolib_dark_ritual_templar_leggings": "Dark Ritual Templar Leggings",
+  "item.hazennstuff.geckolib_dark_ritual_templar_boots": "Dark Ritual Templar Boots",
+
+  "item.hazennstuff.frieren_helmet": "Frieren Hair",
+  "item.hazennstuff.frieren_chestplate": "Frieren Robes",
+  "item.hazennstuff.frieren_leggings": "Frieren Leggings",
+  "item.hazennstuff.frieren_boots": "Frieren Boots",
 
 
   "curios.modifiers.mana_crystal": "When using the Mana Crystal:",

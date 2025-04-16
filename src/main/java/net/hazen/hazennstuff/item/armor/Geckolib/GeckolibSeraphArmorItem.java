@@ -4,7 +4,7 @@ import io.redspace.ironsspellbooks.api.registry.AttributeRegistry;
 import io.redspace.ironsspellbooks.entity.armor.GenericCustomArmorRenderer;
 import io.redspace.ironsspellbooks.item.weapons.AttributeContainer;
 import io.redspace.ironsspellbooks.registries.MobEffectRegistry;
-import net.hazen.hazennstuff.effect.ModEffects;
+import net.hazen.hazennstuff.effect.HnSEffects;
 import net.hazen.hazennstuff.entity.armor.Geckolib.GeckolibSeraphArmorModel;
 import net.hazen.hazennstuff.item.armor.HnSArmorMaterials;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -25,7 +25,7 @@ public class GeckolibSeraphArmorItem extends ImbuableGeckolibHnSArmorItem {
                 new AttributeContainer(AttributeRegistry.MAX_MANA, 150.0, AttributeModifier.Operation.ADD_VALUE),
                 new AttributeContainer(AttributeRegistry.HOLY_SPELL_POWER, .15, AttributeModifier.Operation.ADD_VALUE),
                 new AttributeContainer(AttributeRegistry.ELDRITCH_SPELL_POWER, .05, AttributeModifier.Operation.ADD_VALUE),
-                new AttributeContainer(AttributeRegistry.SPELL_POWER, .5, AttributeModifier.Operation.ADD_VALUE)
+                new AttributeContainer(AttributeRegistry.SPELL_POWER, .05, AttributeModifier.Operation.ADD_VALUE)
         );
     }
 
@@ -45,8 +45,8 @@ public class GeckolibSeraphArmorItem extends ImbuableGeckolibHnSArmorItem {
     }
 
     private void evaluateArmorEffects(Player player) {
-        if (!player.hasEffect(ModEffects.SERAPHS_MIGHT_EFFECT)) {
-            player.addEffect(new MobEffectInstance(ModEffects.SERAPHS_MIGHT_EFFECT, 200, 0, false, false, true));
+        if (!player.hasEffect(HnSEffects.SERAPHS_MIGHT_EFFECT)) {
+            player.addEffect(new MobEffectInstance(HnSEffects.SERAPHS_MIGHT_EFFECT, 200, 0, false, false, true));
         }
         if (!player.hasEffect(MobEffectRegistry.ANGEL_WINGS)) {
             player.addEffect(new MobEffectInstance(MobEffectRegistry.ANGEL_WINGS, 200, 0, false, false, true));

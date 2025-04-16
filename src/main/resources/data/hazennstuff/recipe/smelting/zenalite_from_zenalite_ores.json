@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 1.0,
+  "group": "zenalite",
+  "ingredient": {
+    "tag": "hazennstuff:zenalite_ores"
+  },
+  "result": {
+    "id": "hazennstuff:zenalite"
+  }
+}
