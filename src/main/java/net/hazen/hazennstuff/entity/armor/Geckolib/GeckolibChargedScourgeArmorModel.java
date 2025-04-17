@@ -19,7 +19,7 @@ public class GeckolibChargedScourgeArmorModel extends DefaultedEntityGeoModel<Ge
 
     @Override
     public ResourceLocation getTextureResource(GeckolibChargedScourgeArmorItem animatable) {
-        return ResourceLocation.fromNamespaceAndPath(HazenNStuff.MOD_ID, "textures/models/armor/geckolib/charged_scourge_armor_geckolib.png");
+        return ResourceLocation.fromNamespaceAndPath(HazenNStuff.MOD_ID, "textures/models/armor/geckolib/charged_scourge_armor.png");
     }
 
     @Override

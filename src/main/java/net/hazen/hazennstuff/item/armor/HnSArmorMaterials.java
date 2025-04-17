@@ -1,6 +1,5 @@
 package net.hazen.hazennstuff.item.armor;
 
-import io.redspace.ironsspellbooks.IronsSpellbooks;
 import io.redspace.ironsspellbooks.registries.ItemRegistry;
 import net.hazen.hazennstuff.HazenNStuff;
 import net.hazen.hazennstuff.item.item.HnSItems;
@@ -28,7 +27,7 @@ public class HnSArmorMaterials {
             warlockArmorMap(),
             16,
             HnSSounds.CREAKING_SORCERER_EQUIP,
-            () -> Ingredient.of(HnSItems.ZENALITE.get()),
+            () -> Ingredient.of(HnSItems.ZENALITE_INGOT.get()),
             2,
             0.1F);
 
@@ -36,7 +35,7 @@ public class HnSArmorMaterials {
             warlockArmorMap(),
             16,
             HnSSounds.SERAPH_EQUIP,
-            () -> Ingredient.of(HnSItems.ZENALITE.get()),
+            () -> Ingredient.of(HnSItems.ZENALITE_INGOT.get()),
             2,
             0.1F);
 
@@ -44,7 +43,7 @@ public class HnSArmorMaterials {
             warlockArmorMap(),
             16,
             SoundEvents.ARMOR_EQUIP_NETHERITE,
-            () -> Ingredient.of(HnSItems.ZENALITE.get()),
+            () -> Ingredient.of(HnSItems.ZENALITE_INGOT.get()),
             2,
             0.1F);
 
@@ -52,7 +51,7 @@ public class HnSArmorMaterials {
             warlockArmorMap(),
             16,
             HnSSounds.CHARGED_SCOURGE_EQUIP,
-            () -> Ingredient.of(HnSItems.ZENALITE.get()),
+            () -> Ingredient.of(HnSItems.ZENALITE_INGOT.get()),
             2,
             0.1F);
 
@@ -60,7 +59,7 @@ public class HnSArmorMaterials {
             warlockArmorMap(),
             16,
             HnSSounds.SOUL_FLAME_EQUIP,
-            () -> Ingredient.of(HnSItems.ZENALITE.get()),
+            () -> Ingredient.of(HnSItems.ZENALITE_INGOT.get()),
             2,
             0.1F);
 
@@ -68,7 +67,7 @@ public class HnSArmorMaterials {
             warlockArmorMap(),
             16,
             HnSSounds.SUPREME_WITCH_EQUIP,
-            () -> Ingredient.of(HnSItems.ZENALITE.get()),
+            () -> Ingredient.of(HnSItems.ZENALITE_INGOT.get()),
             2,
             0.1F);
 
@@ -76,7 +75,7 @@ public class HnSArmorMaterials {
             warlockArmorMap(),
             16,
             HnSSounds.CRYOGENIC_RULER_EQUIP,
-            () -> Ingredient.of(HnSItems.ZENALITE.get()),
+            () -> Ingredient.of(HnSItems.ZENALITE_INGOT.get()),
             2,
             0.1F);
 
@@ -84,7 +83,7 @@ public class HnSArmorMaterials {
             warlockArmorMap(),
             16,
             HnSSounds.FLESH_MASS_EQUIP,
-            () -> Ingredient.of(HnSItems.ZENALITE.get()),
+            () -> Ingredient.of(HnSItems.ZENALITE_INGOT.get()),
             2,
             0.1F);
 
@@ -92,7 +91,7 @@ public class HnSArmorMaterials {
             warlockArmorMap(),
             16,
             HnSSounds.ENDER_DRAGON_EQUIP,
-            () -> Ingredient.of(HnSItems.ZENALITE.get()),
+            () -> Ingredient.of(HnSItems.ZENALITE_INGOT.get()),
             2,
             0.1F);
 
@@ -108,7 +107,7 @@ public class HnSArmorMaterials {
             warlockArmorMap(),
             16,
             SoundEvents.ARMOR_EQUIP_NETHERITE,
-            () -> Ingredient.of(HnSItems.ZENALITE.get()),
+            () -> Ingredient.of(HnSItems.ZENALITE_INGOT.get()),
             2,
             0.1F);
 

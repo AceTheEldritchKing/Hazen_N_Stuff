@@ -19,11 +19,11 @@ public class GeckolibSupremeWitchArmorModel extends DefaultedEntityGeoModel<Geck
 
     @Override
     public ResourceLocation getTextureResource(GeckolibSupremeWitchArmorItem animatable) {
-        return ResourceLocation.fromNamespaceAndPath(HazenNStuff.MOD_ID, "textures/models/armor/geckolib/supreme_witch_armor_geckolib.png");
+        return ResourceLocation.fromNamespaceAndPath(HazenNStuff.MOD_ID, "textures/models/armor/geckolib/supreme_witch_armor.png");
     }
 
     @Override
     public ResourceLocation getAnimationResource(GeckolibSupremeWitchArmorItem animatable) {
-        return ResourceLocation.fromNamespaceAndPath(IronsSpellbooks.MODID, "animations/wizard_armor_animation.json");
+        return ResourceLocation.fromNamespaceAndPath(HazenNStuff.MOD_ID, "animations/supreme_witch_armor_geckolib.animation.json");
     }
 }

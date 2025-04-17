@@ -15,6 +15,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.api.distmarker.OnlyIn;
+import software.bernie.geckolib.animation.*;
 import software.bernie.geckolib.renderer.GeoArmorRenderer;
 
 public class GeckolibCryogenicRulerArmorItem extends ImbuableGeckolibHnSArmorItem {

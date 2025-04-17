@@ -16,7 +16,7 @@ import java.util.function.Supplier;
 
 public class HNSExtendedWeaponTiers implements Tier, IronsWeaponTier {
     //  Ice Pike
-    public static HNSExtendedWeaponTiers ICE_PIKE = new HNSExtendedWeaponTiers(16000, 10, -3.0F, 10, BlockTags.INCORRECT_FOR_NETHERITE_TOOL, () -> Ingredient.of(HnSItems.ZENALITE.get()),
+    public static HNSExtendedWeaponTiers ICE_PIKE = new HNSExtendedWeaponTiers(16000, 10, -3.0F, 10, BlockTags.INCORRECT_FOR_NETHERITE_TOOL, () -> Ingredient.of(HnSItems.ZENALITE_INGOT.get()),
             new AttributeContainer(AttributeRegistry.ICE_SPELL_POWER, 0.20, AttributeModifier.Operation.ADD_MULTIPLIED_BASE),
             new AttributeContainer(ALObjects.Attributes.COLD_DAMAGE, 3, AttributeModifier.Operation.ADD_VALUE),
             new AttributeContainer(Attributes.ENTITY_INTERACTION_RANGE, 2, AttributeModifier.Operation.ADD_VALUE),

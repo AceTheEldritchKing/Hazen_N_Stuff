@@ -19,7 +19,7 @@ public class GeckolibSoulFlameArmorModel extends DefaultedEntityGeoModel<Geckoli
 
     @Override
     public ResourceLocation getTextureResource(GeckolibSoulFlameArmorItem animatable) {
-        return ResourceLocation.fromNamespaceAndPath(HazenNStuff.MOD_ID, "textures/models/armor/geckolib/soul_flame_armor_geckolib.png");
+        return ResourceLocation.fromNamespaceAndPath(HazenNStuff.MOD_ID, "textures/models/armor/geckolib/soul_flame_armor.png");
     }
 
     @Override

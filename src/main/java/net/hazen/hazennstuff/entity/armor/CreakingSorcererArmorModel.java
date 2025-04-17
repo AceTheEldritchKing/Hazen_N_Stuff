@@ -19,6 +19,6 @@ public class CreakingSorcererArmorModel extends GeoModel<CreakingSorcererArmorIt
 
     @Override
     public ResourceLocation getAnimationResource(CreakingSorcererArmorItem animatable) {
-        return ResourceLocation.fromNamespaceAndPath(IronsSpellbooks.MODID, "animations/wizard_armor_animation.animation.json");
+        return ResourceLocation.fromNamespaceAndPath(HazenNStuff.MOD_ID, "animations/creaking_armor.animation.json");
     }
 }

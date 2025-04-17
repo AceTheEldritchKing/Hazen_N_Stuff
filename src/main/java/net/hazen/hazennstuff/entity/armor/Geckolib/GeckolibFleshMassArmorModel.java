@@ -19,12 +19,12 @@ public class GeckolibFleshMassArmorModel extends DefaultedEntityGeoModel<Geckoli
 
     @Override
     public ResourceLocation getTextureResource(GeckolibFleshMassArmorItem animatable) {
-        return ResourceLocation.fromNamespaceAndPath(HazenNStuff.MOD_ID, "textures/models/armor/geckolib/flesh_mass_armor_geckolib.png");
+        return ResourceLocation.fromNamespaceAndPath(HazenNStuff.MOD_ID, "textures/models/armor/geckolib/flesh_mass_armor.png");
     }
 
     @Override
     public ResourceLocation getAnimationResource(GeckolibFleshMassArmorItem animatable) {
-        return ResourceLocation.fromNamespaceAndPath(IronsSpellbooks.MODID, "animations/wizard_armor_animation.json");
+        return ResourceLocation.fromNamespaceAndPath(HazenNStuff.MOD_ID, "animations/flesh_mass_armor_geckolib.animation.json");
     }
 }
 

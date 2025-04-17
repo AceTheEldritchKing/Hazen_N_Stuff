@@ -18,11 +18,11 @@ public class HnSCreativeModeTabs {
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, HazenNStuff.MOD_ID);
 
     public static final Supplier<CreativeModeTab> HAZEN_N_STUFF_MATERIALS = CREATIVE_MODE_TAB.register("hazennstuff_materials",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(HnSItems.ZENALITE.get()))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(HnSItems.ZENALITE_INGOT.get()))
                     .withTabsBefore(ResourceLocation.fromNamespaceAndPath(HazenNStuff.MOD_ID, "hazennstuff_blocks"))
                     .title(Component.translatable("creativetab.hazennstuff.hazennstuff_materials"))
                     .displayItems((itemDisplayParameters, output) -> {
-                        output.accept(HnSItems.ZENALITE);
+                        output.accept(HnSItems.ZENALITE_INGOT);
                         output.accept(HnSItems.RAWZENALITE);
                         output.accept(HnSItems.STARKISSEDZENALITE);
                         output.accept(HnSItems.DIVINE_MOLD);
@@ -101,6 +101,16 @@ public class HnSCreativeModeTabs {
                         output.accept(HnSItems.FRIEREN_CHESTPLATE.get());
                         output.accept(HnSItems.FRIEREN_LEGGINGS.get());
                         output.accept(HnSItems.FRIEREN_BOOTS.get());
+                        // Synthesizer V
+                        output.accept(HnSItems.SYNTHESIZER_V_HELMET.get());
+                        output.accept(HnSItems.SYNTHESIZER_V_CHESTPLATE.get());
+                        output.accept(HnSItems.SYNTHESIZER_V_LEGGINGS.get());
+                        output.accept(HnSItems.SYNTHESIZER_V_BOOTS.get());
+                        // Utau
+                        output.accept(HnSItems.UTAU_HELMET.get());
+                        output.accept(HnSItems.UTAU_CHESTPLATE.get());
+                        output.accept(HnSItems.UTAU_LEGGINGS.get());
+                        output.accept(HnSItems.UTAU_BOOTS.get());
 
 
                         //Curios

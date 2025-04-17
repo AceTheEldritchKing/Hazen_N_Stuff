@@ -20,12 +20,12 @@ public class GeckolibCryogenicRulerArmorModel extends DefaultedEntityGeoModel<Ge
 
     @Override
     public ResourceLocation getTextureResource(GeckolibCryogenicRulerArmorItem animatable) {
-        return ResourceLocation.fromNamespaceAndPath(HazenNStuff.MOD_ID, "textures/models/armor/geckolib/cryogenic_ruler_armor_geckolib.png");
+        return ResourceLocation.fromNamespaceAndPath(HazenNStuff.MOD_ID, "textures/models/armor/geckolib/cryogenic_ruler_armor.png");
     }
 
     @Override
     public ResourceLocation getAnimationResource(GeckolibCryogenicRulerArmorItem animatable) {
-        return ResourceLocation.fromNamespaceAndPath(IronsSpellbooks.MODID, "animations/wizard_armor_animation.json");
+        return ResourceLocation.fromNamespaceAndPath(HazenNStuff.MOD_ID, "animations/cryogenic_ruler_armor_geckolib.animation.json");
 
     }
 }

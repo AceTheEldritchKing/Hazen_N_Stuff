@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "hazennstuff:item/charged_scourge_mask"
+    "layer0": "hazennstuff:item/armors/charged_scourge_helmet"
   }
 }

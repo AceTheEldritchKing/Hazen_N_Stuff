@@ -19,7 +19,7 @@ public class GeckolibLegionnaireArmorModel extends DefaultedEntityGeoModel<Gecko
 
     @Override
     public ResourceLocation getTextureResource(GeckolibLegionnaireArmorItem animatable) {
-        return ResourceLocation.fromNamespaceAndPath(HazenNStuff.MOD_ID, "textures/models/armor/geckolib/legionnaire_armor_geckolib.png");
+        return ResourceLocation.fromNamespaceAndPath(HazenNStuff.MOD_ID, "textures/models/armor/geckolib/legionnaire_armor.png");
     }
 
     @Override

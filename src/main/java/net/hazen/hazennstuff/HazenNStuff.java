@@ -100,7 +100,7 @@ public class HazenNStuff
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS)
-            event.accept(HnSItems.ZENALITE);
+            event.accept(HnSItems.ZENALITE_INGOT);
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS)
             event.accept(HnSItems.RAWZENALITE);
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS)

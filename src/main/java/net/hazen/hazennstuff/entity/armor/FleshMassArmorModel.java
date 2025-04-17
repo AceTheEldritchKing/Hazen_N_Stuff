@@ -22,6 +22,6 @@ public class FleshMassArmorModel extends GeoModel<FleshMassArmorItem> {
 
     @Override
     public ResourceLocation getAnimationResource(FleshMassArmorItem animatable) {
-        return ResourceLocation.fromNamespaceAndPath(IronsSpellbooks.MODID, "animations/wizard_armor_animation.animation.json");
+        return ResourceLocation.fromNamespaceAndPath(HazenNStuff.MOD_ID, "animations/flesh_mass_armor.animation.json");
     }
 }
