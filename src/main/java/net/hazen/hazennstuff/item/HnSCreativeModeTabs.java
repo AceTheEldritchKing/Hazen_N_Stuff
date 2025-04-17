@@ -101,6 +101,16 @@ public class HnSCreativeModeTabs {
                         output.accept(HnSItems.FRIEREN_CHESTPLATE.get());
                         output.accept(HnSItems.FRIEREN_LEGGINGS.get());
                         output.accept(HnSItems.FRIEREN_BOOTS.get());
+                        // Synthesizer V
+                        output.accept(HnSItems.SYNTHESIZER_V_HELMET.get());
+                        output.accept(HnSItems.SYNTHESIZER_V_CHESTPLATE.get());
+                        output.accept(HnSItems.SYNTHESIZER_V_LEGGINGS.get());
+                        output.accept(HnSItems.SYNTHESIZER_V_BOOTS.get());
+                        // Utau
+                        output.accept(HnSItems.UTAU_HELMET.get());
+                        output.accept(HnSItems.UTAU_CHESTPLATE.get());
+                        output.accept(HnSItems.UTAU_LEGGINGS.get());
+                        output.accept(HnSItems.UTAU_BOOTS.get());
 
 
                         //Curios

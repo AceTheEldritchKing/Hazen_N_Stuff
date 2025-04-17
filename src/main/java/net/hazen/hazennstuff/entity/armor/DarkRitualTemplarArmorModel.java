@@ -19,6 +19,6 @@ public class DarkRitualTemplarArmorModel extends GeoModel<DarkRitualTemplarArmor
 
     @Override
     public ResourceLocation getAnimationResource(DarkRitualTemplarArmorItem animatable) {
-        return ResourceLocation.fromNamespaceAndPath(IronsSpellbooks.MODID, "animations/wizard_armor_animation.animation.json");
+        return ResourceLocation.fromNamespaceAndPath(HazenNStuff.MOD_ID, "animations/dark_ritual_templar_armor.animation.json");
     }
 }

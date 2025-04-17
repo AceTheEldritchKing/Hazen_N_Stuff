@@ -20,6 +20,6 @@ public class ChargedScourgeArmorModel extends GeoModel<ChargedScourgeArmorItem> 
 
     @Override
     public ResourceLocation getAnimationResource(ChargedScourgeArmorItem animatable) {
-        return ResourceLocation.fromNamespaceAndPath(IronsSpellbooks.MODID, "animations/wizard_armor_animation.animation.json");
+        return ResourceLocation.fromNamespaceAndPath(HazenNStuff.MOD_ID, "animations/charged_scourge_armor.animation.json");
     }
 }

@@ -22,6 +22,6 @@ public class SeraphArmorModel extends GeoModel<SeraphArmorItem> {
 
     @Override
     public ResourceLocation getAnimationResource(SeraphArmorItem animatable) {
-        return ResourceLocation.fromNamespaceAndPath(IronsSpellbooks.MODID, "animations/wizard_armor_animation.animation.json");
+        return ResourceLocation.fromNamespaceAndPath(HazenNStuff.MOD_ID, "animations/seraph_armor.animation.json");
     }
 }

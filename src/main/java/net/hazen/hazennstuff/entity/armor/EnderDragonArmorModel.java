@@ -21,6 +21,6 @@ public class EnderDragonArmorModel extends GeoModel<EnderDragonArmorItem> {
 
     @Override
     public ResourceLocation getAnimationResource(EnderDragonArmorItem animatable) {
-        return ResourceLocation.fromNamespaceAndPath(IronsSpellbooks.MODID, "animations/wizard_armor_animation.animation.json");
+        return ResourceLocation.fromNamespaceAndPath(HazenNStuff.MOD_ID, "animations/ender_dragon_armor.animation.json");
     }
 }

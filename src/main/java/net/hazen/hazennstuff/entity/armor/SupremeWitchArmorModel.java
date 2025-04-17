@@ -19,6 +19,6 @@ public class SupremeWitchArmorModel extends GeoModel<SupremeWitchArmorItem> {
 
     @Override
     public ResourceLocation getAnimationResource(SupremeWitchArmorItem animatable) {
-        return ResourceLocation.fromNamespaceAndPath(IronsSpellbooks.MODID, "animations/wizard_armor_animation.animation.json");
+        return ResourceLocation.fromNamespaceAndPath(HazenNStuff.MOD_ID, "animations/supreme_witch_armor.animation.json");
     }
 }

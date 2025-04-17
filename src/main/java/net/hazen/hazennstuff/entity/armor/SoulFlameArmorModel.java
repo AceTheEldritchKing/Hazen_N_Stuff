@@ -19,6 +19,6 @@ public class SoulFlameArmorModel extends GeoModel<SoulFlameArmorItem> {
 
     @Override
     public ResourceLocation getAnimationResource(SoulFlameArmorItem animatable) {
-        return ResourceLocation.fromNamespaceAndPath(IronsSpellbooks.MODID, "animations/wizard_armor_animation.animation.json");
+        return ResourceLocation.fromNamespaceAndPath(HazenNStuff.MOD_ID, "animations/soul_flame_armor.animation.json");
     }
 }

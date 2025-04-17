@@ -20,6 +20,6 @@ public class CryogenicRulerArmorModel extends GeoModel<CryogenicRulerArmorItem> 
 
     @Override
     public ResourceLocation getAnimationResource(CryogenicRulerArmorItem animatable) {
-        return ResourceLocation.fromNamespaceAndPath(IronsSpellbooks.MODID, "animations/wizard_armor_animation.animation.json");
+        return ResourceLocation.fromNamespaceAndPath(HazenNStuff.MOD_ID, "animations/cryogenic_ruler_armor.animation.json");
     }
 }
