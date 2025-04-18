@@ -1,6 +1,12 @@
 {
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "hazennstuff:item/weapons/ice_pike_sprite"
+  "parent": "minecraft:item/handheld",
+  "loader": "neoforge:separate_transforms",
+  "base": {
+    "parent": "hazennstuff:item/ice_pike_display"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "hazennstuff:item/ice_pike_gui"
+    }
   }
 }

@@ -23,6 +23,14 @@ public class HNSExtendedWeaponTiers implements Tier, IronsWeaponTier {
             new AttributeContainer(Attributes.ATTACK_SPEED, -0.3, AttributeModifier.Operation.ADD_VALUE)
     );
 
+    //  Fireblossom Rapier - Feel free to change the values, I just have this for testing purposes
+    public static HNSExtendedWeaponTiers FIREBLOSSOM_RAPIER = new HNSExtendedWeaponTiers(16000, 10, -3.0F, 10, BlockTags.INCORRECT_FOR_NETHERITE_TOOL, () -> Ingredient.of(HnSItems.ZENALITE_INGOT.get()),
+            new AttributeContainer(AttributeRegistry.FIRE_SPELL_POWER, 0.20, AttributeModifier.Operation.ADD_MULTIPLIED_BASE),
+            new AttributeContainer(ALObjects.Attributes.FIRE_DAMAGE, 3, AttributeModifier.Operation.ADD_VALUE),
+            new AttributeContainer(Attributes.ENTITY_INTERACTION_RANGE, 2, AttributeModifier.Operation.ADD_VALUE),
+            new AttributeContainer(Attributes.ATTACK_SPEED, -0.3, AttributeModifier.Operation.ADD_VALUE)
+    );
+
     //private final int level;
     private final int uses;
     private final float speed;

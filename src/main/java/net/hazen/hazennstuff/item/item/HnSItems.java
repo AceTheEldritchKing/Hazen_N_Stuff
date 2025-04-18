@@ -9,7 +9,9 @@ import net.hazen.hazennstuff.HazenNStuff;
 import net.hazen.hazennstuff.item.armor.*;
 import net.hazen.hazennstuff.item.armor.Geckolib.*;
 import net.hazen.hazennstuff.item.curios.*;
+import net.hazen.hazennstuff.item.weapons.FireblossomRapierItem;
 import net.hazen.hazennstuff.item.weapons.HNSExtendedWeaponTiers;
+import net.hazen.hazennstuff.item.weapons.IcePikeItem;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Rarity;
@@ -38,9 +40,9 @@ public class HnSItems {
             () -> new Item(new Item.Properties()));
 
     //Weapons
-    public static final DeferredHolder<Item, Item> ICE_PIKE = ITEMS.register("ice_pike", () ->
-            new MagicSwordItem(HNSExtendedWeaponTiers.ICE_PIKE, ItemPropertiesHelper.equipment().rarity(Rarity.RARE).attributes(ExtendedSwordItem.createAttributes(HNSExtendedWeaponTiers.ICE_PIKE)),
-                    SpellDataRegistryHolder.of(new SpellDataRegistryHolder(SpellRegistry.ICE_SPIKES_SPELL, 10))));
+    public static final DeferredHolder<Item, Item> ICE_PIKE = ITEMS.register("ice_pike", IcePikeItem::new);
+
+    public static final DeferredHolder<Item, Item> FIREBLOSSOM_RAPIER = ITEMS.register("fireblossom_rapier", FireblossomRapierItem::new);
 
 
     //Curios
